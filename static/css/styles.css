@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: local('HelveticaNeueCyr'),
+        url(../fonts/HelveticaNeueCyr-Roman.otf),
+        url(../fonts/HelveticaNeueCyr-Bold.otf);
+}
+
+body {
+    font-family: HelveticaNeueCyr;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: auto;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 24px 38px 15px 40px;
+    font-size: 25px;
+    z-index: 50;
+    background: white;
+    /*border-bottom: 1px solid #000;*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        color: #900000;
+    }
+
+    &:active {
+        color: #900000;
+    }
+}
+
+#nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+        margin-right: 829px;
+    }
+
+    #nav-links-wrapper {
+        display: flex;
+        gap: 104px;
+    }
+}
+
+.lead_video {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    margin-left: 5px;
+}
+
+.modeShowWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 900px 40px 0 40px;
+    font-size: 24px;
+}
+
+.projectsAndSwitcher {
+    display: flex;
+    margin: 20px 40px 0 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .projectsHeader {
+        font-weight: 700;
+        font-size: 74px;
+    }
+
+    .switchContainer {
+        padding-bottom: 2px;
+
+        & input {
+            display: none;
+        }
+
+        & label {
+            display: inline-block;
+            position: relative;
+            transition: 300ms ease-in-out;
+            width: 79px;
+            height: 48px;
+            outline: 2px solid black;
+            border-radius: 30px;
+            cursor: pointer;
+
+            & div {
+                position: absolute;
+                width: 42px;
+                height: 42px;
+                top: 3px;
+                left: 3px;
+                background: #000;
+                border-radius: 50%;
+                transition: 300ms ease-in-out;
+            }
+        }
+
+    }
+}
+
+.switch:checked + label {
+    background: #900000;
+    transition: 300ms ease-in-out;
+    outline: none;
+
+    & div {
+        background: #fff;
+        left: 34px;
+    }
+}
+
+.behanceSVG {
+    fill: #000;
+    cursor: pointer;
+
+    &:hover {
+        fill: #900000;
+    }
+}
+
+.projectsHeaders:hover {
+    color: #900000;
+    cursor: pointer;
+}
+
+.projects {
+    margin: 100px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+
+    & .fotolarek {
+        & .fotolarekHeaderWrapper {
+            display: flex;
+            justify-content: space-between;
+
+            & .fotolarekProjectHeader {
+                font-size: 44px;
+                display: flex;
+                gap: 10px;
+
+            }
+
+            & .projectYear {
+                font-size: 24px;
+            }
+        }
+
+        & .fotolarekDescription {
+            margin: 20px 0 50px 0;
+
+            & span {
+                display: inline-block;
+                width: 300px;
+                font-size: 24px;
+            }
+        }
+
+        & .fotolarekImg {
+            width: 1360px;
+            height: 425px;
+        }
+    }
+
+    & .mobileAppsProjects {
+        margin-top: 100px;
+        display: flex;
+        gap: 61px;
+        margin-bottom: 100px;
+        & .capturedCulture {
+
+            & .ccHeaderWrapper {
+                display: flex;
+                margin-bottom: 20px;
+                & .capturedCultureHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 24px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .ccDescription {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            & .ccIMGcontainer {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        & .betterCopy {
+
+            & .bcHeaderWrapper {
+                display: flex;
+                margin-bottom: 20px;
+
+                & .bcHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 274px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .bcDescription {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            & .bcIMGcontainer {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+
+    & .nnccProjectAndFincherBook {
+        margin-bottom: 100px;
+        display: flex;
+        gap: 61px;
+
+        & .nncc {
+            & .nnccHeaderWrapper {
+                display: flex;
+                margin-bottom: 20px;
+
+                & .nnccHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 389px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .nnccDescription {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            & .nnccIMGcontainer {
+                position: relative;
+
+                & #nncc_woman {
+                    position: absolute;
+                    z-index: -2;
+                    top: -51px;
+                    left: 121px;
+                }
+
+                & #white_t-shirt {
+                    position: absolute;
+                    z-index: -1;
+                    left: 211px;
+                }
+            }
+        }
+
+        & .fincherBook {
+
+            & .fincherBookHeaderWrapper {
+                display: flex;
+                margin-bottom: 20px;
+
+                & .fincherBookHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 138px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .fincherBookDescription {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            & .fincherBookIMGcontainer {
+                position: relative;
+                & #fincher_second {
+                    position: absolute;
+                    z-index: -1;
+                    left: 143px;
+                    top: -39px;
+                }
+            }
+        }
+    }
+}
+
+.feedback {
+    margin: 0 40px 100px 40px;
+    & span {
+        display: inline-block;
+        font-size: 74px;
+        margin-bottom: 100px;
+    }
+
+    & .feedback-form {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        & #nameContactsWrapper {
+            display: flex;
+            gap: 20px;
+        }
+        & .formNameWrapper {
+            & label {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            & #name {
+                border: none;
+                border-bottom: 2px solid #000;
+                width: 670px;
+                padding-bottom: 15px;
+                font-size: 24px;
+            }
+        }
+
+        & .formContactsWrapper {
+            & label {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            & #contacts {
+                border: none;
+                border-bottom: 2px solid #000;
+                width: 670px;
+                padding-bottom: 15px;
+                font-size: 24px;
+            }
+        }
+
+        & .textareaBtnWrapper {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+            & .formTextareaWrapper {
+                & label {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                & #message {
+                    border: none;
+                    border-bottom: 2px solid #000;
+                    width: 670px;
+                    height: 48px;
+                    font-size: 24px;
+                    resize: none;
+                    scrollbar-width: none;
+                    font-family: HelveticaNeueCyr;
+                }
+            }
+
+            & #submit-btn {
+                width: 105px;
+                height: 49px;
+                font-size: 24px;
+                background: transparent;
+                border-radius: 50px;
+                cursor: pointer;
+
+                &:active {
+                    color: white;
+                    background-color: #900000;
+                    border: none;
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: #900000;
+                    border: none;
+                }
+            }
+        }
+
+
+    }
+}
+
+#message::-webkit-scrollbar {
+    display: none;
+}
+
+#message::placeholder {
+    font-family: HelveticaNeueCyr;
+}
+
+#name:focus {
+    outline: none;
+}
+
+#contacts:focus {
+    outline: none;
+}
+
+#message:focus {
+    outline: none;
+}
+
+
+
+
+
