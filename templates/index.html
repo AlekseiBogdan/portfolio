@@ -5,15 +5,25 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='js/mainPage.js') }}"></script>
-    <title>Title</title>
+    <title>krnzkrv.</title>
 </head>
 <body>
     <div id="navScrollLine"></div>
     <div class="wrapper">
         <nav>
-            <div id="nav-wrapper">
+            <div class="nav-wrapper">
                 <span>KARINA</span>
-                <div id="nav-links-wrapper">
+                <div class="nav-links-wrapper">
+                    <a href="">INFO</a>
+                    <a href="">CV&darr;</a>
+                    <a class='active' href="">PROJECTS</a>
+                </div>
+            </div>
+        </nav>
+        <nav id="darkNav">
+            <div class="nav-wrapper">
+                <span>KARINA</span>
+                <div class="nav-links-wrapper">
                     <a href="">INFO</a>
                     <a href="">CV&darr;</a>
                     <a class='active' href="">PROJECTS</a>
@@ -23,12 +33,18 @@
         <video autoplay muted loop height="860" class="lead_video white_mode">
             <source src="{{ url_for('static', filename='videos/lead_aspirations.mp4') }}">
         </video>
+        <video autoplay muted loop height="860" class="lead_video dark_mode">
+            <source src="{{ url_for('static', filename='videos/lead_inspirations.mp4') }}">
+        </video>
         <div class="modeShowWrapper">
-            <span id="mainMode">MAIN</span>
-            <span id="otherMode">TO OTHERS</span>
+            <span class="mainMode">MAIN</span>
+            <span class="mainMode darkMain">OTHER</span>
+            <span class="otherMode">TO OTHERS</span>
+            <span class="otherMode darkOther">TO MAIN</span>
         </div>
         <div class="projectsAndSwitcher">
             <span class="projectsHeader">PROJECTS</span>
+            <span class="projectsHeader darkHeader">RANDOM THINGS</span>
             <div class="switchContainer">
                 <input type="checkbox" class="switch" id="switch">
                 <label for="switch" class="switch-label">
@@ -36,6 +52,25 @@
                 </label>
             </div>
         </div>
+        <section class="randomThings">
+            <div class="cartoonPosters">
+                <img id="plankton" class='cartoonAnimatedPosters' src="{{ url_for('static', filename='images/plankton.png') }}" alt="">
+                <img class='cartoonAnimatedPosters' src="{{ url_for('static', filename='images/alice.png') }}" alt="">
+                <img class='cartoonAnimatedPosters' src="{{ url_for('static', filename='images/bojack.png') }}" alt="">
+                <img class='cartoonAnimatedPosters' src="{{ url_for('static', filename='images/nemo.png') }}" alt="">
+                <img class='cartoonAnimatedPosters' src="{{ url_for('static', filename='images/aang.png') }}" alt="">
+            </div>
+            <img height='589' width="676" src="{{ url_for('static', filename='images/glassLetters.png') }}" alt="">
+            <img src="{{ url_for('static', filename='images/keithHaring.png') }}" alt="">
+            <div class="mentalPosters">
+                <img class='animatedPosters' src="{{ url_for('static', filename='images/schizophrenia.png') }}" alt="">
+                <img class='animatedPosters' src="{{ url_for('static', filename='images/depression.png') }}" alt="">
+                <img class='animatedPosters' src="{{ url_for('static', filename='images/sociopathy.png') }}" alt="">
+                <img class='animatedPosters' src="{{ url_for('static', filename='images/bipolar_disorder.png') }}" alt="">
+                <img class='animatedPosters' src="{{ url_for('static', filename='images/derealisation.png') }}" alt="">
+            </div>
+            <img id='redImage' width="676" height="342" src="{{ url_for('static', filename='images/redbgLetters.png') }}" alt="">
+        </section>
         <section class="projects">
             <div class="fotolarek">
                 <div class="fotolarekHeaderWrapper">
@@ -166,6 +201,15 @@
             </video>
         </div>
         <div class="contactsWrapper">
+            <div class="contacts">
+                <span>CONTACT ME:</span>
+                <span>mail: <a href="" target="_blank">karina</a></span>
+                <span>inst: <a href="" target="_blank">@karimorish</a></span>
+                <span>tg: <a href="" target="_blank">@hahaareu</a></span>
+            </div>
+            <span>LAST EDIT: 10.2023</span>
+        </div>
+        <div class="darkmodeContacts">
             <div class="contacts">
                 <span>CONTACT ME:</span>
                 <span>mail: <a href="" target="_blank">karina</a></span>

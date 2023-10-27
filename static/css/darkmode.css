@@ -1,0 +1,103 @@
+:root {
+    --main-bg-color: #fff;
+    --darkmode-bg-color: #090909;
+    --main-text-color: #000;
+    --darkmode-text-color: #fff;
+    --main-hover-color: #900000;
+    --darkmode-hover-color: #CA0000;
+}
+
+#darkNav {
+    background-color: var(--darkmode-bg-color);
+    display: none;
+    color: var(--darkmode-text-color);
+
+    & a {
+        color: var(--darkmode-text-color);
+    }
+
+    & a:hover {
+        color: var(--darkmode-hover-color);
+    }
+
+    & .active {
+        color: var(--darkmode-hover-color);
+    }
+}
+
+.dark_mode {
+    display: none;
+}
+
+.darkMain {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.darkOther {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.darkHeader {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.randomThings {
+    margin: 0 0 0 40px;
+    display: none;
+}
+
+.cartoonPosters {
+    width: 670px;
+    height: 945px;
+    position: relative;
+
+    & img {
+        position: absolute;
+        left: 0;
+    }
+
+}
+
+.mentalPosters {
+    margin-top: -359px;
+    position: relative;
+
+    & img {
+        position: absolute;
+    }
+}
+
+#redImage {
+    margin-left: 690px;
+    margin-top: -361px;
+}
+
+.darkmodeContacts {
+
+    display: none;
+    margin: auto 40px 60px 40px;
+    justify-content: space-between;
+    font-size: 24px;
+    color: var(--darkmode-text-color);
+
+    & .contacts {
+        display: flex;
+        gap: 68px;
+
+        & a {
+            text-decoration: none;
+            color: var(--darkmode-text-color);
+
+            &:visited {
+                color: var(--darkmode-text-color);
+            }
+
+            &:hover {
+                color: var(--darkmode-hover-color);
+            }
+        }
+    }
+}
