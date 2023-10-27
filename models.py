@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 
 from flask_sqlalchemy import SQLAlchemy
 
@@ -14,11 +14,18 @@ class Feedback(db.Model):
     date = db.Column(db.Date, default=date.today())
 
 
+class Visitors(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    ip = db.Column(db.String(20), unique=False, nullable=False)
+    visited_at = db.Column(db.DateTime, default=datetime.now())
+
 # to create a db:
 # 1. launch Python Console
-# 2. import app from app.py and model from models.py (e.g. from models import Feedback)
-# 3. run app.app_context().push()
-# 4. run db.create_all()
+# 2. from app import app
+# 2.1 from models import <MODEL_NAME>
+# 2.2 (optional) from models import db
+# 3. app.app_context().push()
+# 4. db.create_all()
 
 # to make migrations:
 # flask db init
