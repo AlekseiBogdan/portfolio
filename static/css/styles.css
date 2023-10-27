@@ -75,7 +75,7 @@ nav a {
     display: flex;
     margin: 20px 40px 0 40px;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     .projectsHeader {
         font-weight: 700;
@@ -140,7 +140,7 @@ nav a {
 }
 
 .projects {
-    margin: 50px 40px 0 40px;
+    margin: 60px 40px 100px 40px;
     display: flex;
     flex-direction: column;
 
@@ -162,7 +162,7 @@ nav a {
         }
 
         & .fotolarekDescription {
-            margin: 20px 0 50px 0;
+            margin: 10px 0 30px 0;
 
             & span {
                 display: inline-block;
@@ -178,15 +178,14 @@ nav a {
     }
 
     & .mobileAppsProjects {
-        margin-top: 100px;
+        margin: 80px 0 80px 0;
         display: flex;
         gap: 61px;
-        margin-bottom: 100px;
         & .capturedCulture {
 
             & .ccHeaderWrapper {
                 display: flex;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 & .capturedCultureHeader {
                     display: flex;
                     font-size: 44px;
@@ -201,7 +200,7 @@ nav a {
 
             & .ccDescription {
                 font-size: 24px;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
 
             & .ccIMGcontainer {
@@ -214,7 +213,7 @@ nav a {
 
             & .bcHeaderWrapper {
                 display: flex;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 & .bcHeader {
                     display: flex;
@@ -230,7 +229,7 @@ nav a {
 
             & .bcDescription {
                 font-size: 24px;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
 
             & .bcIMGcontainer {
@@ -241,14 +240,13 @@ nav a {
     }
 
     & .nnccProjectAndFincherBook {
-        margin-bottom: 100px;
         display: flex;
         gap: 61px;
 
         & .nncc {
             & .nnccHeaderWrapper {
                 display: flex;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 & .nnccHeader {
                     display: flex;
@@ -289,7 +287,7 @@ nav a {
 
             & .fincherBookHeaderWrapper {
                 display: flex;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 & .fincherBookHeader {
                     display: flex;
@@ -322,11 +320,11 @@ nav a {
 }
 
 .feedback {
-    margin: 0 40px;
+    margin: 0 40px 100px 40px;
     & span {
         display: inline-block;
         font-size: 74px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 
     & .feedback-form {
@@ -341,9 +339,9 @@ nav a {
         }
         & .formNameWrapper {
             position: relative;
-            & label {
+            & .inputHeader {
                 display: block;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
             & .placeholder {
@@ -351,6 +349,7 @@ nav a {
                 user-select: none;
                 cursor: text;
                 top: 48px;
+                left: 0px;
                 color: #8F8F8F;
             }
 
@@ -358,16 +357,16 @@ nav a {
                 border: none;
                 border-bottom: 2px solid #000;
                 width: 670px;
-                padding-bottom: 15px;
+                padding: 15px 0 10px 0;
                 font-size: 24px;
             }
         }
 
         & .formContactsWrapper {
             position: relative;
-            & label {
+            & .inputHeader {
                 display: block;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
             & .placeholder {
@@ -375,6 +374,7 @@ nav a {
                 user-select: none;
                 cursor: text;
                 top: 48px;
+                left: 0px;
                 color: #8F8F8F;
             }
 
@@ -382,20 +382,20 @@ nav a {
                 border: none;
                 border-bottom: 2px solid #000;
                 width: 670px;
-                padding-bottom: 15px;
+                padding: 15px 0 10px 0;
                 font-size: 24px;
             }
         }
 
         & .textareaBtnWrapper {
             display: flex;
-            align-items: flex-end;
-            gap: 20px;
+            gap: 60px;
+            flex-direction: column;
             & .formTextareaWrapper {
                 position: relative;
-                & label {
+                & .inputHeader {
                     display: block;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
 
                 & .placeholder {
@@ -403,6 +403,7 @@ nav a {
                     user-select: none;
                     cursor: text;
                     top: 48px;
+                    left: 0px;
                     color: #8F8F8F;
                 }
 
@@ -411,7 +412,7 @@ nav a {
                     border-bottom: 2px solid #000;
                     width: 670px;
                     height: 26px;
-                    padding-bottom: 15px;
+                    padding: 15px 0 10px 0;
                     font-size: 24px;
                     resize: none;
                     scrollbar-width: none;
@@ -477,12 +478,12 @@ nav a {
 .welcome_video {
     width: 816px;
     height: 216px;
-    margin: 0 auto 120px auto;
+    margin: 0 auto 200px auto;
 }
 
 .contactsWrapper {
     display: flex;
-    margin: auto 40px 50px 40px;
+    margin: auto 40px 60px 40px;
     justify-content: space-between;
     font-size: 24px;
 

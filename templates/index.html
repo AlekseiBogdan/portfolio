@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script scr="{{ url_for('static', filename='js/mainPage.js') }}"></script>
     <title>Title</title>
 </head>
 <body>
@@ -137,19 +138,19 @@
             <form class='feedback-form' action="">
                 <div id="nameContactsWrapper">
                     <div class="formNameWrapper">
-                        <label for="name" >WHO IS THIS</label>
+                        <label class='inputHeader' for="name" >WHO IS THIS</label>
                         <input id='name' name='name' type="text">
                         <label class='placeholder' for="name">Name</label>
                     </div>
                     <div class="formContactsWrapper">
-                        <label for="contactsInput">CONTACTS</label>
+                        <label class='inputHeader' for="contactsInput">CONTACTS</label>
                         <input id='contactsInput' name="contacts" type="text">
                         <label for="contactsInput" class="placeholder">E-mail, etc.</label>
                     </div>
                 </div>
                 <div class="textareaBtnWrapper">
                     <div class="formTextareaWrapper">
-                        <label for="message">SHARE YOUR THOUGHTS</label>
+                        <label class='inputHeader' for="message">SHARE YOUR THOUGHTS</label>
                         <textarea name="message" id="message"></textarea>
                         <label for="message" class="placeholder">Message</label>
                     </div>
