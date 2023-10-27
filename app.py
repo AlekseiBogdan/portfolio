@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 
 from models import Feedback, db
@@ -26,6 +26,15 @@ admin.add_view(FeedbackAdmin(Feedback, db.session, name='Обратная свя
 def hello_world():
     return render_template('index.html')
 
+# @app.route('/get_feedback', methods=['POST'])
+# def get_feedback():
+#     name = request.form.get('name')
+#     contacts = request.form.get('contacts')
+#     message = request.form.get('message')
+#     fback = Feedback(name=name, contacts=contacts, suggestions=message)
+#     db.session.add(fback)
+#     db.session.commit()
+#     return redirect('/#feedback')
 
 if __name__ == '__main__':
     app.run(host='192.168.0.102', port=5000, debug=True)
