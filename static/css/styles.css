@@ -48,12 +48,12 @@ nav a {
     justify-content: space-between;
 
     & span {
-        margin-right: 829px;
+        margin-right: 821px;
     }
 
     #nav-links-wrapper {
         display: flex;
-        gap: 104px;
+        gap: 108px;
     }
 }
 
@@ -93,18 +93,18 @@ nav a {
             display: inline-block;
             position: relative;
             transition: 300ms ease-in-out;
-            width: 79px;
-            height: 48px;
+            width: 80px;
+            height: 46px;
             outline: 2px solid black;
-            border-radius: 30px;
+            border-radius: 50px;
             cursor: pointer;
 
             & div {
                 position: absolute;
                 width: 42px;
                 height: 42px;
-                top: 3px;
-                left: 3px;
+                top: 2px;
+                left: 2px;
                 background: #000;
                 border-radius: 50%;
                 transition: 300ms ease-in-out;
@@ -121,7 +121,7 @@ nav a {
 
     & div {
         background: #fff;
-        left: 34px;
+        left: 35px;
     }
 }
 
@@ -140,7 +140,7 @@ nav a {
 }
 
 .projects {
-    margin: 100px 40px 0 40px;
+    margin: 50px 40px 0 40px;
     display: flex;
     flex-direction: column;
 
@@ -295,7 +295,7 @@ nav a {
                     display: flex;
                     font-size: 44px;
                     gap: 10px;
-                    margin-right: 138px;
+                    margin-right: 142px;
                 }
 
                 & .projectYear {
@@ -322,7 +322,7 @@ nav a {
 }
 
 .feedback {
-    margin: 0 40px 100px 40px;
+    margin: 0 40px;
     & span {
         display: inline-block;
         font-size: 74px;
@@ -340,9 +340,18 @@ nav a {
             gap: 20px;
         }
         & .formNameWrapper {
+            position: relative;
             & label {
                 display: block;
                 margin-bottom: 20px;
+            }
+
+            & .placeholder {
+                position: absolute;
+                user-select: none;
+                cursor: text;
+                top: 48px;
+                color: #8F8F8F;
             }
 
             & #name {
@@ -355,12 +364,21 @@ nav a {
         }
 
         & .formContactsWrapper {
+            position: relative;
             & label {
                 display: block;
                 margin-bottom: 20px;
             }
 
-            & #contacts {
+            & .placeholder {
+                position: absolute;
+                user-select: none;
+                cursor: text;
+                top: 48px;
+                color: #8F8F8F;
+            }
+
+            & #contactsInput {
                 border: none;
                 border-bottom: 2px solid #000;
                 width: 670px;
@@ -374,16 +392,26 @@ nav a {
             align-items: flex-end;
             gap: 20px;
             & .formTextareaWrapper {
+                position: relative;
                 & label {
                     display: block;
                     margin-bottom: 20px;
+                }
+
+                & .placeholder {
+                    position: absolute;
+                    user-select: none;
+                    cursor: text;
+                    top: 48px;
+                    color: #8F8F8F;
                 }
 
                 & #message {
                     border: none;
                     border-bottom: 2px solid #000;
                     width: 670px;
-                    height: 48px;
+                    height: 26px;
+                    padding-bottom: 15px;
                     font-size: 24px;
                     resize: none;
                     scrollbar-width: none;
@@ -398,6 +426,7 @@ nav a {
                 background: transparent;
                 border-radius: 50px;
                 cursor: pointer;
+                border: 2px solid black;
 
                 &:active {
                     color: white;
@@ -421,23 +450,60 @@ nav a {
     display: none;
 }
 
-#message::placeholder {
-    font-family: HelveticaNeueCyr;
-}
-
 #name:focus {
     outline: none;
 }
 
-#contacts:focus {
+#name:focus + label{
+    display: none;
+}
+
+#contactsInput:focus {
     outline: none;
+}
+
+#contactsInput:focus + label {
+    display: none;
 }
 
 #message:focus {
     outline: none;
 }
 
+#message:focus + label {
+    display: none;
+}
 
+.welcome_video {
+    width: 816px;
+    height: 216px;
+    margin: 0 auto 120px auto;
+}
+
+.contactsWrapper {
+    display: flex;
+    margin: auto 40px 50px 40px;
+    justify-content: space-between;
+    font-size: 24px;
+
+    & .contacts {
+        display: flex;
+        gap: 68px;
+
+        & a {
+            text-decoration: none;
+            color: #000;
+
+            &:visited {
+                color: #000;
+            }
+
+            &:hover {
+                color: #900000;
+            }
+        }
+    }
+}
 
 
 
