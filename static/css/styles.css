@@ -5,9 +5,29 @@
         url(../fonts/HelveticaNeueCyr-Bold.otf);
 }
 
+:root {
+    --main-bg-color: #fff;
+    --darkmode-bg-color: #000;
+    --main-text-color: #000;
+    --darkmode-text-color: #fff;
+    --main-hover-color: #900000;
+    --darkmode-hover-color: #CA0000;
+}
+
 body {
     font-family: HelveticaNeueCyr;
     overflow-x: hidden;
+    position: relative;
+}
+
+#navScrollLine {
+    position: sticky;
+    border: 1px solid #DADADA;
+    top: 64px;
+    z-index: 100;
+    width: 100vw;
+    opacity: 0;
+    transition: 50ms ease-in-out;
 }
 
 .wrapper {
@@ -22,16 +42,16 @@ nav {
     padding: 24px 38px 15px 40px;
     font-size: 25px;
     z-index: 50;
-    background: white;
+    background: var(--main-bg-color);
     /*border-bottom: 1px solid #000;*/
 }
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--main-text-color);
 
     &:visited {
-        color: black;
+        color: var(--main-text-color);
     }
 
     &:hover {
@@ -126,11 +146,11 @@ nav a {
 }
 
 .behanceSVG {
-    fill: #000;
+    fill: var(--main-text-color);
     cursor: pointer;
 
     &:hover {
-        fill: #900000;
+        fill: var(--main-hover-color);
     }
 }
 
@@ -186,6 +206,7 @@ nav a {
             & .ccHeaderWrapper {
                 display: flex;
                 margin-bottom: 10px;
+
                 & .capturedCultureHeader {
                     display: flex;
                     font-size: 44px;
@@ -403,7 +424,7 @@ nav a {
                     user-select: none;
                     cursor: text;
                     top: 48px;
-                    left: 0px;
+                    left: 0;
                     color: #8F8F8F;
                 }
 
@@ -416,7 +437,7 @@ nav a {
                     font-size: 24px;
                     resize: none;
                     scrollbar-width: none;
-                    font-family: HelveticaNeueCyr;
+                    font-family: 'HelveticaNeueCyr';
                 }
             }
 
@@ -431,13 +452,13 @@ nav a {
 
                 &:active {
                     color: white;
-                    background-color: #900000;
+                    background-color: var(--main-hover-color);
                     border: none;
                 }
 
                 &:hover {
                     color: white;
-                    background-color: #900000;
+                    background-color: var(--main-hover-color);
                     border: none;
                 }
             }
@@ -493,14 +514,14 @@ nav a {
 
         & a {
             text-decoration: none;
-            color: #000;
+            color: var(--main-text-color);
 
             &:visited {
-                color: #000;
+                color: var(--main-text-color);
             }
 
             &:hover {
-                color: #900000;
+                color: var(--main-hover-color);
             }
         }
     }
