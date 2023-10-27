@@ -91,7 +91,25 @@ let changeMode = (check, navLine) => {
             contactsDark[0].style.display = 'none';
         }
     }
+}
 
+let formProcessing = function(placeholder, name, contacts, textarea) {
+    textarea.addEventListener('input', () => changeHeight())
+    textarea.addEventListener('focusout', () => validate(textarea, 2))
+    name.addEventListener('focusout', () => validate(name, 0))
+    contacts.addEventListener('focusout', () => validate(contacts, 1))
+    function validate(formEl, numb) {
+
+        if (formEl.value) {
+            placeholder[numb].style.display = 'none';
+        }
+    }
+
+    function changeHeight() {
+        textarea.style.height = '26px';
+        textarea.style.height = textarea.scrollHeight - 28 + 'px';
+
+    }
 
 }
 
@@ -103,5 +121,11 @@ window.onload = function() {
     changeMode(
         document.getElementById('switch'),
         navLine,
-    )
+    );
+    formProcessing(
+        document.getElementsByClassName('placeholder'),
+        document.getElementById('name'),
+        document.getElementById('contactsInput'),
+        document.getElementById('message'),
+    );
 }

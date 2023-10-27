@@ -353,7 +353,7 @@ nav a {
 }
 
 .feedback {
-    margin: 0 40px 100px 40px;
+    margin: 0 40px 10px 40px;
     & span {
         display: inline-block;
         font-size: 74px;
@@ -513,12 +513,12 @@ nav a {
 .welcome_video {
     width: 816px;
     height: 216px;
-    margin: 0 auto 200px auto;
+    margin: 0 auto 230px auto;
 }
 
 .contactsWrapper {
     display: flex;
-    margin: auto 40px 60px 40px;
+    margin: 0 40px 60px 40px;
     justify-content: space-between;
     font-size: 24px;
 
