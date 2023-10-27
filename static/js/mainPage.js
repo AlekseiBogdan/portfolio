@@ -89,6 +89,7 @@ let changeMode = (check, navLine) => {
             welcome_vid[0].style.display = 'block';
             contactsWhite[0].style.display = 'flex';
             contactsDark[0].style.display = 'none';
+            clearInterval(timerId);
         }
     }
 }

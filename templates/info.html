@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/infoPage.js') }}"></script>
+    <title>Info</title>
+</head>
+<body>
+    <div id="navScrollLine"></div>
+    <div class="wrapper">
+         <nav>
+            <div class="nav-wrapper">
+                <span>KARINA</span>
+                <div class="nav-links-wrapper">
+                    <a class='active' href="">INFO</a>
+                    <a href="">CV&darr;</a>
+                    <a href="{{ url_for('hello_world') }}">PROJECTS</a>
+                </div>
+            </div>
+        </nav>
+        <span class="infoHeader">I'M KARINA. I AM A MULTI-TOOL<br>DESIGNER WHO IS READY FOR<br>TASKS OF DIFFERENT COMPLEXITY.</span>
+        <div class="infoIMGcontainer">
+            <img src="{{ url_for('static', filename='images/first_karina.png') }}" alt="">
+            <img src="{{ url_for('static', filename='images/second_karina.png') }}" alt="">
+            <img src="{{ url_for('static', filename='images/third-karina.png') }}" alt="">
+            <img src="{{ url_for('static', filename='images/last-karina.png') }}" alt="">
+        </div>
+        <span class="infoSubHeader">WHAT ABOUT MY SKILLS</span>
+        <div class="skillsContainer">
+            <div class="skillsFirstRow">
+                <span>FIGMA</span>
+                <span>ADOBE KIT (PS, AI, ID, AE)</span>
+                <span>READYMAG</span>
+                <span>AI-TOOLS</span>
+                <span>NOTION</span>
+            </div>
+            <div class="skillsSecondRow">
+                <span>UX RESEARCH</span>
+                <span>PROTOTYPING</span>
+                <span>WIREFRAMING</span>
+                <span>USABILITY TESTING</span>
+                <span>USER ANALYSIS</span>
+            </div>
+        </div>
+        <div class="workAndEducation">
+            <div class="work">
+                <span class="workSubHeader">WORK EXP</span>
+                <div class="lad">
+                    <div class="ladWrapper">
+                        <span class="workExpSubHeader">LAD (INTERNSHIP)</span>
+                        <span class="length">5 months</span>
+                    </div>
+                    <span class="ladDescription">product manager</span>
+                </div>
+                <div class="freelance">
+                    <div class="freelanceWrapper">
+                        <span class="workExpSubHeader">FREELANCE</span>
+                        <span class="length">2023-p.d.</span>
+                    </div>
+                    <span class="freelanceDescription">graphic&digital designer</span>
+                </div>
+            </div>
+            <div class="education">
+                <span class="educationSubHeader">EDUCATION</span>
+                <div class="bachelor">
+                    <div class="bachelorWrapper">
+                        <span class="educationExpSubHeader">HSE UNIVERSITY</span>
+                        <span class="length">2020-2024</span>
+                    </div>
+                    <span class="hseDescription">Bachelor. Fundamental and Applied Linguistics</span>
+                </div>
+                <div class="additionalEducation">
+                    <div class="addEduWrapper">
+                        <span class="addExpSubHeader">HSE ART AND DESIGN</span>
+                        <span class="length">2022-2023</span>
+                    </div>
+                    <span class="addEduDescription">Additional education. Сommunication and digital design</span>
+                </div>
+            </div>
+        </div>
+        <div class="infoContacts">
+            <a href='https://t.me/hahaareu' class="TG">TELEGRAM</a>
+            <a href="" class="mail">MAIL</a>
+            <span class="date">LAST EDIT: 10.2023</span>
+        </div>
+    </div>
+</body>
+</html>

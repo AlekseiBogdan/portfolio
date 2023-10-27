@@ -26,6 +26,9 @@ admin.add_view(FeedbackAdmin(Feedback, db.session, name='Обратная свя
 def hello_world():
     return render_template('index.html')
 
+@app.route('/info')
+def info():
+    return render_template('info.html')
 
 @app.route('/get_feedback', methods=['POST'])
 def get_feedback():
