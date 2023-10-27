@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect
 from flask_admin import Admin
 
-from models import Feedback, db
-from views import FeedbackAdmin
+from models import Feedback, Visitors, db
+from views import FeedbackAdmin, VisitorsAdmin
 
 from flask_migrate import Migrate
 
@@ -20,10 +20,15 @@ migrate = Migrate(app, db)
 
 admin = Admin(app, name='Портфолио', template_mode='bootstrap4')
 admin.add_view(FeedbackAdmin(Feedback, db.session, name='Обратная связь'))
+admin.add_view(VisitorsAdmin(Visitors, db.session, name='Посетители'))
 
 
 @app.route('/')
 def hello_world():
+    user_ip = request.environ['REMOTE_ADDR']
+    info = Visitors(ip=user_ip)
+    db.session.add(info)
+    db.session.commit()
     return render_template('index.html')
 
 @app.route('/info')
@@ -42,4 +47,4 @@ def get_feedback():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.0.102', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
