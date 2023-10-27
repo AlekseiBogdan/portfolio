@@ -16,7 +16,7 @@
                 <div id="nav-links-wrapper">
                     <a href="">INFO</a>
                     <a href="">CV&darr;</a>
-                    <a href="">PROJECTS</a>
+                    <a class='active' href="">PROJECTS</a>
                 </div>
             </div>
         </nav>
@@ -134,28 +134,29 @@
                 </div>
             </div>
         </section>
+        <div id="feedback"></div>
         <div class="feedback">
             <span>LET’S START A NEW PROJECT</span>
-            <form class='feedback-form' action="">
+            <form class='feedback-form' action="/get_feedback" method="post">
                 <div id="nameContactsWrapper">
                     <div class="formNameWrapper">
                         <label class='inputHeader' for="name" >WHO IS THIS</label>
-                        <input id='name' name='name' type="text">
+                        <input id='name' name='name' type="text" required>
                         <label class='placeholder' for="name">Name</label>
                     </div>
                     <div class="formContactsWrapper">
                         <label class='inputHeader' for="contactsInput">CONTACTS</label>
-                        <input id='contactsInput' name="contacts" type="text">
+                        <input id='contactsInput' name="contacts" type="text" required>
                         <label for="contactsInput" class="placeholder">E-mail, etc.</label>
                     </div>
                 </div>
                 <div class="textareaBtnWrapper">
                     <div class="formTextareaWrapper">
                         <label class='inputHeader' for="message">SHARE YOUR THOUGHTS</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" required></textarea>
                         <label for="message" class="placeholder">Message</label>
                     </div>
-                    <button id="submit-btn" type="button">SEND</button>
+                    <button id="submit-btn" type="submit">SEND</button>
                 </div>
             </form>
         </div>

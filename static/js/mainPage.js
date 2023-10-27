@@ -20,9 +20,11 @@ let changeMode = (check) => {
     function changeStyle() {
         if (check.checked === true) {
             document.body.style.background = 'var(--darkmode-bg-color)';
+            document.body.style.color = 'var(--darkmode-text-color)';
             navbar[0].style.background = 'var(--darkmode-bg-color)';
         } else {
-            document.body.style.background = '#fff';
+            document.body.style.background = 'var(--main-bg-color)';
+            document.body.style.color = 'var(--main-text-color)'
             navbar[0].style.background = 'var(--main-bg-color)';
         }
     }

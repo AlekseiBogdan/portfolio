@@ -27,7 +27,7 @@ body {
     z-index: 100;
     width: 100vw;
     opacity: 0;
-    transition: 50ms ease-in-out;
+    transition: 300ms ease-in-out;
 }
 
 .wrapper {
@@ -50,16 +50,22 @@ nav a {
     text-decoration: none;
     color: var(--main-text-color);
 
+
+
     &:visited {
         color: var(--main-text-color);
     }
 
     &:hover {
-        color: #900000;
+        color: var(--main-hover-color);
     }
 
     &:active {
-        color: #900000;
+        color: var(--main-hover-color);
+    }
+
+    &.active {
+        color: var(--main-hover-color);
     }
 }
 
@@ -79,7 +85,7 @@ nav a {
 
 .lead_video {
     position: absolute;
-    top: 0px;
+    top: 0;
     z-index: -1;
     margin-left: 5px;
 }
@@ -160,7 +166,7 @@ nav a {
 }
 
 .projects {
-    margin: 60px 40px 100px 40px;
+    margin: 60px 40px 40px 40px;
     display: flex;
     flex-direction: column;
 
@@ -340,6 +346,11 @@ nav a {
     }
 }
 
+#feedback {
+    height: 1px;
+    margin-bottom: 59px;
+}
+
 .feedback {
     margin: 0 40px 100px 40px;
     & span {
@@ -450,15 +461,15 @@ nav a {
                 cursor: pointer;
                 border: 2px solid black;
 
-                &:active {
+                &:hover {
                     color: white;
                     background-color: var(--main-hover-color);
                     border: none;
                 }
 
-                &:hover {
+                &:active {
                     color: white;
-                    background-color: var(--main-hover-color);
+                    background-color: #000;
                     border: none;
                 }
             }
@@ -467,6 +478,8 @@ nav a {
 
     }
 }
+
+
 
 #message::-webkit-scrollbar {
     display: none;
