@@ -108,6 +108,80 @@
     }
 }
 
+@keyframes cucumber4move {
+    0% {
+        top: 5%;
+        left: 17%;
+    }
+
+    30% {
+        top: 15%;
+        left: 76%;
+        transform: rotate(66deg);
+    }
+
+    60% {
+        top: 47%;
+        left: 33%;
+        transform: scale(130%);
+    }
+
+    100% {
+        top: 5%;
+        left: 17%;
+        transform: rotate(0deg) scale(100%);
+    }
+}
+
+@keyframes cucumber5move {
+    0% {
+        top: 87%;
+        left: 12%;
+    }
+
+    30% {
+        top: 12%;
+        left: 99%;
+        transform: rotate(55deg);
+    }
+
+    60% {
+        top: 45%;
+        left: 45%;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        top: 87%;
+        left: 12%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cucumber6move {
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+
+    30% {
+        top: 2%;
+        transform: rotate(360deg) scale(115%);
+    }
+
+    60% {
+        top: 76%;
+        left: 13%;
+        transform: scale(75%);
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: scale(100%) rotate(0deg);
+    }
+}
+
 #darkNav {
     background-color: var(--darkmode-bg-color);
     display: none;
@@ -182,6 +256,18 @@
 
 #third_cucumber {
     animation: cucumber3move 30s ease-in-out infinite;
+}
+
+#fourth_cucumber {
+    animation: cucumber4move 30s ease-in-out infinite;
+}
+
+#fifth_cucumber {
+    animation: cucumber5move 30s ease-in-out infinite;
+}
+
+#sixth_cucumber {
+    animation: cucumber6move 30s ease-in-out infinite;
 }
 
 .mentalPosters {
