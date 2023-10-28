@@ -23,7 +23,8 @@ body {
     position: relative;
 }
 
-#navScrollLine {
+@media screen and (min-width: 1440px) {
+    #navScrollLine {
     position: sticky;
     border: 1px solid #DADADA;
     top: 64px;
@@ -43,7 +44,7 @@ nav {
     position: sticky;
     top: 0;
     padding: 24px 38px 15px 40px;
-    font-size: 25px;
+    font-size: 24px;
     z-index: 50;
     background: var(--main-bg-color);
     /*border-bottom: 1px solid #000;*/
@@ -249,6 +250,10 @@ nav a {
             & .ccIMGcontainer {
                 display: flex;
                 gap: 10px;
+
+                & .bigimg {
+                    display: none;
+                }
             }
         }
 
@@ -278,6 +283,10 @@ nav a {
             & .bcIMGcontainer {
                 display: flex;
                 gap: 10px;
+
+                & .bigimg {
+                    display: none;
+                }
             }
         }
     }
@@ -311,14 +320,20 @@ nav a {
             & .nnccIMGcontainer {
                 position: relative;
 
+                & .bigimg {
+                    display: none;
+                }
+
                 & #nncc_woman {
                     position: absolute;
+                    width: 305.883px;
+                    height: 321.778px;
                     z-index: -2;
                     top: -51px;
                     left: 121px;
                 }
 
-                & #white_t-shirt {
+                & .white_t-shirt {
                     position: absolute;
                     z-index: -1;
                     left: 211px;
@@ -351,7 +366,12 @@ nav a {
 
             & .fincherBookIMGcontainer {
                 position: relative;
-                & #fincher_second {
+
+                & .bigimg {
+                    display: none;
+                }
+
+                & .fincher_second {
                     position: absolute;
                     z-index: -1;
                     left: 143px;
@@ -556,6 +576,572 @@ nav a {
         }
     }
 }
+}
+/*@media screen and (min-width: 1920px) {*/
+/*    #navScrollLine {*/
+/*    position: sticky;*/
+/*    border: 1px solid #DADADA;*/
+/*    top: 84px;*/
+/*    z-index: 100;*/
+/*    width: 100vw;*/
+/*    opacity: 0;*/
+/*    transition: 300ms ease-in-out;*/
+/*}*/
+
+/*.wrapper {*/
+/*    width: 1920px;*/
+/*    margin: auto;*/
+/*    position: relative;*/
+/*}*/
+
+/*nav {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    padding: 32px 40px 20px 40px;*/
+/*    font-size: 32px;*/
+/*    z-index: 50;*/
+/*    background: var(--main-bg-color);*/
+/*}*/
+
+/*nav a {*/
+/*    text-decoration: none;*/
+/*    color: var(--main-text-color);*/
+
+/*    &:visited {*/
+/*        color: var(--main-text-color);*/
+/*    }*/
+
+/*    &:hover {*/
+/*        color: var(--main-hover-color);*/
+/*    }*/
+
+/*    &:active {*/
+/*        color: var(--main-hover-color);*/
+/*    }*/
+
+/*    &.active {*/
+/*        color: var(--main-hover-color);*/
+/*    }*/
+/*}*/
+
+/*.nav-wrapper {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+
+/*    & span {*/
+/*        margin-right: 821px;*/
+/*    }*/
+
+/*    .nav-links-wrapper {*/
+/*        display: flex;*/
+/*        gap: 150px;*/
+/*    }*/
+/*}*/
+
+/*.lead_video {*/
+/*    position: absolute;*/
+/*    height: 1100px;*/
+/*    top: 0;*/
+/*    z-index: -1;*/
+/*    margin-left: 5px;*/
+/*}*/
+
+/*.modeShowWrapper {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin: 900px 40px 0 40px;*/
+/*    font-size: 32px;*/
+/*}*/
+
+/*.projectsAndSwitcher {*/
+/*    display: flex;*/
+/*    margin: 26px 40px 0 40px;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+
+/*    .projectsHeader {*/
+/*        font-weight: 700;*/
+/*        font-size: 98px;*/
+/*    }*/
+
+/*    .switchContainer {*/
+/*        padding-bottom: 2px;*/
+
+/*        & input {*/
+/*            display: none;*/
+/*        }*/
+
+/*        & label {*/
+/*            display: inline-block;*/
+/*            position: relative;*/
+/*            transition: 300ms ease-in-out;*/
+/*            width: 107px;*/
+/*            height: 64px;*/
+/*            outline: 2px solid black;*/
+/*            border-radius: 50px;*/
+/*            cursor: pointer;*/
+
+/*            & div {*/
+/*                position: absolute;*/
+/*                width: 56px;*/
+/*                height: 56px;*/
+/*                top: 4px;*/
+/*                left: 4px;*/
+/*                background: #000;*/
+/*                border-radius: 50%;*/
+/*                transition: 300ms ease-in-out;*/
+/*            }*/
+/*        }*/
+
+/*    }*/
+/*}*/
+
+/*.switch:checked + label {*/
+/*    background: #900000;*/
+/*    transition: 300ms ease-in-out;*/
+/*    outline: none;*/
+
+/*    & div {*/
+/*        background: #fff;*/
+/*        left: 47px;*/
+/*    }*/
+/*}*/
+
+/*.behanceSVG {*/
+/*    width: 51px;*/
+/*    height: 51px;*/
+
+/*    fill: var(--main-text-color);*/
+/*    cursor: pointer;*/
+
+/*    &:hover {*/
+/*        fill: var(--main-hover-color);*/
+/*    }*/
+/*}*/
+
+/*.projectsHeaders:hover {*/
+/*    color: #900000;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.projects {*/
+/*    margin: 80px 40px 40px 40px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+
+/*    & .fotolarek {*/
+/*        & .fotolarekHeaderWrapper {*/
+/*            display: flex;*/
+/*            justify-content: space-between;*/
+
+/*            & .fotolarekProjectHeader {*/
+/*                font-size: 58px;*/
+/*                display: flex;*/
+/*                gap: 14px;*/
+
+/*                & a {*/
+/*                    color: var(--main-text-color);*/
+/*                    text-decoration: none;*/
+
+/*                    &:visited {*/
+/*                        color: var(--main-text-color);*/
+/*                        text-decoration: none;*/
+/*                    }*/
+
+/*                    &:hover {*/
+/*                        color: var(--main-hover-color);*/
+/*                    }*/
+/*                }*/
+/*            }*/
+
+/*            & .projectYear {*/
+/*                font-size: 32px;*/
+/*            }*/
+/*        }*/
+
+/*        & .fotolarekDescription {*/
+/*            margin: 14px 0 30px 0;*/
+
+/*            & span {*/
+/*                display: inline-block;*/
+/*                width: 433px;*/
+/*                font-size: 32px;*/
+/*            }*/
+/*        }*/
+/*    }*/
+
+/*    & .mobileAppsProjects {*/
+/*        margin: 108px 0 108px 0;*/
+/*        display: flex;*/
+/*        gap: 77px;*/
+/*        & .capturedCulture {*/
+
+/*            & .ccHeaderWrapper {*/
+/*                display: flex;*/
+/*                margin-bottom: 14px;*/
+
+/*                & .capturedCultureHeader {*/
+/*                    display: flex;*/
+/*                    font-size: 58px;*/
+/*                    gap: 14px;*/
+/*                    margin-right: 72px;*/
+/*                }*/
+
+/*                & .projectYear {*/
+/*                    font-size: 32px;*/
+/*                }*/
+/*            }*/
+
+/*            & .ccDescription {*/
+/*                font-size: 32px;*/
+/*                margin-bottom: 40px;*/
+/*            }*/
+
+/*            & .ccIMGcontainer {*/
+/*                display: flex;*/
+/*                gap: 14px;*/
+
+/*                & .smallimg {*/
+/*                    display: none;*/
+/*                }*/
+
+/*                & .bigimg {*/
+/*                    width: 203px;*/
+/*                    height: 414px;*/
+/*                }*/
+/*            }*/
+/*        }*/
+
+/*        & .betterCopy {*/
+
+/*            & .bcHeaderWrapper {*/
+/*                display: flex;*/
+/*                margin-bottom: 14px;*/
+
+/*                & .bcHeader {*/
+/*                    display: flex;*/
+/*                    font-size: 58px;*/
+/*                    gap: 14px;*/
+/*                    margin-right: 384px;*/
+/*                }*/
+
+/*                & .projectYear {*/
+/*                    font-size: 32px;*/
+/*                }*/
+/*            }*/
+
+/*            & .bcDescription {*/
+/*                font-size: 32px;*/
+/*                margin-bottom: 40px;*/
+/*            }*/
+
+/*            & .bcIMGcontainer {*/
+/*                display: flex;*/
+/*                gap: 14px;*/
+
+/*                & .smallimg {*/
+/*                    display: none;*/
+/*                }*/
+
+/*                & .bigimg {*/
+/*                    width: 203px;*/
+/*                    height: 414px;*/
+/*                }*/
+/*            }*/
+/*        }*/
+/*    }*/
+
+/*    & .nnccProjectAndFincherBook {*/
+/*        display: flex;*/
+/*        gap: 77px;*/
+
+/*        & .nncc {*/
+/*            & .nnccHeaderWrapper {*/
+/*                display: flex;*/
+/*                margin-bottom: 14px;*/
+
+/*                & .nnccHeader {*/
+/*                    display: flex;*/
+/*                    font-size: 58px;*/
+/*                    gap: 14px;*/
+/*                    margin-right: 536px;*/
+/*                }*/
+
+/*                & .projectYear {*/
+/*                    font-size: 32px;*/
+/*                }*/
+/*            }*/
+
+/*            & .nnccDescription {*/
+/*                font-size: 32px;*/
+/*                margin-bottom: 66px;*/
+/*            }*/
+
+/*            & .nnccIMGcontainer {*/
+/*                position: relative;*/
+
+/*                & .smallimg {*/
+/*                    display: none;*/
+/*                }*/
+
+/*                & #nncc_woman {*/
+/*                    width: 407.844px;*/
+/*                    height: 429.038px;*/
+/*                    position: absolute;*/
+/*                    z-index: -2;*/
+/*                    top: -65px;*/
+/*                    left: 121px;*/
+/*                }*/
+
+/*                & .white_t-shirt {*/
+/*                    position: absolute;*/
+/*                    z-index: -1;*/
+/*                    left: 247px;*/
+/*                }*/
+/*            }*/
+/*        }*/
+
+/*        & .fincherBook {*/
+
+/*            & .fincherBookHeaderWrapper {*/
+/*                display: flex;*/
+/*                margin-bottom: 14px;*/
+
+/*                & .fincherBookHeader {*/
+/*                    display: flex;*/
+/*                    font-size: 58px;*/
+/*                    gap: 14px;*/
+/*                    margin-right: 203px;*/
+/*                }*/
+
+/*                & .projectYear {*/
+/*                    font-size: 32px;*/
+/*                }*/
+/*            }*/
+
+/*            & .fincherBookDescription {*/
+/*                font-size: 32px;*/
+/*                margin-bottom: 66px;*/
+/*            }*/
+
+/*            & .fincherBookIMGcontainer {*/
+/*                position: relative;*/
+
+/*                & .smallimg {*/
+/*                    display: none;*/
+/*                }*/
+/*                & .fincher_second {*/
+/*                    position: absolute;*/
+/*                    z-index: -1;*/
+/*                    left: 143px;*/
+/*                    top: -39px;*/
+/*                }*/
+/*            }*/
+/*        }*/
+/*    }*/
+/*}*/
+
+/*#feedback {*/
+/*    height: 1px;*/
+/*    margin-bottom: 59px;*/
+/*}*/
+
+/*.feedback {*/
+/*    margin: 20px 40px 10px 40px;*/
+/*    & span {*/
+/*        display: inline-block;*/
+/*        font-size: 98px;*/
+/*        font-weight: 700;*/
+/*        margin-bottom: 60px;*/
+/*    }*/
+
+/*    & .feedback-form {*/
+/*        font-size: 32px;*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        gap: 80px;*/
+
+/*        & #nameContactsWrapper {*/
+/*            display: flex;*/
+/*            gap: 20px;*/
+/*        }*/
+/*        & .formNameWrapper {*/
+/*            position: relative;*/
+/*            & .inputHeader {*/
+/*                display: block;*/
+/*                margin-bottom: 14px;*/
+/*            }*/
+
+/*            & .placeholder {*/
+/*                position: absolute;*/
+/*                user-select: none;*/
+/*                cursor: text;*/
+/*                top: 52px;*/
+/*                left: 0;*/
+/*                color: #8F8F8F;*/
+/*            }*/
+
+/*            & #name {*/
+/*                border: none;*/
+/*                border-bottom: 2px solid #000;*/
+/*                width: 909px;*/
+/*                padding: 14px 0 10px 0;*/
+/*                font-size: 32px;*/
+/*            }*/
+/*        }*/
+
+/*        & .formContactsWrapper {*/
+/*            position: relative;*/
+/*            & .inputHeader {*/
+/*                display: block;*/
+/*                margin-bottom: 14px;*/
+/*            }*/
+
+/*            & .placeholder {*/
+/*                position: absolute;*/
+/*                user-select: none;*/
+/*                cursor: text;*/
+/*                top: 52px;*/
+/*                left: 0;*/
+/*                color: #8F8F8F;*/
+/*            }*/
+
+/*            & #contactsInput {*/
+/*                border: none;*/
+/*                border-bottom: 2px solid #000;*/
+/*                width: 909px;*/
+/*                padding: 14px 0 10px 0;*/
+/*                font-size: 32px;*/
+/*            }*/
+/*        }*/
+
+/*        & .textareaBtnWrapper {*/
+/*            display: flex;*/
+/*            gap: 80px;*/
+/*            flex-direction: column;*/
+/*            & .formTextareaWrapper {*/
+/*                position: relative;*/
+/*                & .inputHeader {*/
+/*                    display: block;*/
+/*                    margin-bottom: 14px;*/
+/*                }*/
+
+/*                & .placeholder {*/
+/*                    position: absolute;*/
+/*                    user-select: none;*/
+/*                    cursor: text;*/
+/*                    top: 48px;*/
+/*                    left: 0;*/
+/*                    color: #8F8F8F;*/
+/*                }*/
+
+/*                & #message {*/
+/*                    border: none;*/
+/*                    border-bottom: 2px solid #000;*/
+/*                    width: 909px;*/
+/*                    height: 26px;*/
+/*                    padding: 15px 0 10px 0;*/
+/*                    font-size: 32px;*/
+/*                    resize: none;*/
+/*                    scrollbar-width: none;*/
+/*                    font-family: 'HelveticaNeueCyr';*/
+/*                }*/
+/*            }*/
+
+/*            & #submit-btn {*/
+/*                width: 140px;*/
+/*                height: 66px;*/
+/*                font-size: 32px;*/
+/*                background: transparent;*/
+/*                border-radius: 50px;*/
+/*                cursor: pointer;*/
+/*                border: 2px solid black;*/
+
+/*                &:hover {*/
+/*                    color: white;*/
+/*                    background-color: var(--main-hover-color);*/
+/*                    border: none;*/
+/*                }*/
+
+/*                &:active {*/
+/*                    color: white;*/
+/*                    background-color: #000;*/
+/*                    border: none;*/
+/*                }*/
+/*            }*/
+/*        }*/
+
+
+/*    }*/
+/*}*/
+
+
+
+/*#message::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
+
+/*#name:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*#name:focus + label{*/
+/*    display: none;*/
+/*}*/
+
+/*#contactsInput:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*#contactsInput:focus + label {*/
+/*    display: none;*/
+/*}*/
+
+/*#message:focus {*/
+/*    outline: none;*/
+/*}*/
+
+/*#message:focus + label {*/
+/*    display: none;*/
+/*}*/
+
+/*.welcome_video {*/
+/*    width: 1000px;*/
+/*    height: 330px;*/
+/*    margin: 0 auto 230px auto;*/
+
+/*    & video {*/
+/*        object-fit: cover;*/
+/*    }*/
+/*}*/
+
+/*.contactsWrapper {*/
+/*    display: flex;*/
+/*    margin: 0 40px 60px 40px;*/
+/*    justify-content: space-between;*/
+/*    font-size: 24px;*/
+
+/*    & .contacts {*/
+/*        display: flex;*/
+/*        gap: 68px;*/
+
+/*        & a {*/
+/*            text-decoration: none;*/
+/*            color: var(--main-text-color);*/
+
+/*            &:visited {*/
+/*                color: var(--main-text-color);*/
+/*            }*/
+
+/*            &:hover {*/
+/*                color: var(--main-hover-color);*/
+/*            }*/
+/*        }*/
+/*    }*/
+/*}*/
+/*}*/
+
+
 
 
 

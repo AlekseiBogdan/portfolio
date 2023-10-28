@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/infoPage.js') }}"></script>
-    <title>Fotolarek</title>
-</head>
-<body>
-    <div id="navScrollLine"></div>
-    <div class="wrapper">
-        <nav>
-            <div class="nav-wrapper">
-                <span>KARINA</span>
-                <div class="nav-links-wrapper">
-                    <a href="{{ url_for('info') }}">INFO</a>
-                    <a href="">CV&darr;</a>
-                    <a class='active' href="{{ url_for('hello_world') }}">PROJECTS</a>
-                </div>
-            </div>
-        </nav>
+{% extends 'navigation.html' %}
+
+{% block title %}Fotolarek{% endblock %}
+
+{% block content %}
         <div class="fotolarekPage">
             <div class="fotolarekWrapper">
                 <div class="fotolarekHeaderSVG">
@@ -58,6 +41,4 @@
             </div>
             <span>LAST EDIT: 10.2023</span>
         </div>
-    </div>
-</body>
-</html>
+    {% endblock %}

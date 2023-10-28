@@ -1,25 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/infoPage.js') }}"></script>
-    <title>Info</title>
-</head>
-<body>
-    <div id="navScrollLine"></div>
-    <div class="wrapper">
-         <nav>
-            <div class="nav-wrapper">
-                <span>KARINA</span>
-                <div class="nav-links-wrapper">
-                    <a class='active' href="">INFO</a>
-                    <a href="">CV&darr;</a>
-                    <a href="{{ url_for('hello_world') }}">PROJECTS</a>
-                </div>
-            </div>
-        </nav>
+{% extends 'navigation.html' %}
+
+{% block title %}Info{% endblock %}
+
+{% block content %}
+
         <span class="infoHeader">I'M KARINA. I AM A MULTI-TOOL<br>DESIGNER WHO IS READY FOR<br>TASKS OF DIFFERENT COMPLEXITY.</span>
         <div class="infoIMGcontainer">
             <img src="{{ url_for('static', filename='images/first_karina.png') }}" alt="">
@@ -85,6 +69,4 @@
             <a href="" class="mail">MAIL</a>
             <span class="date">LAST EDIT: 10.2023</span>
         </div>
-    </div>
-</body>
-</html>
+{% endblock %}

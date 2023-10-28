@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/mainPage.js') }}"></script>
-    <title>krnzkrv.</title>
-</head>
-<body>
-    <div id="navScrollLine"></div>
-    <div class="wrapper">
-        <nav>
-            <div class="nav-wrapper">
-                <span>KARINA</span>
-                <div class="nav-links-wrapper">
-                    <a href="{{ url_for('info') }}">INFO</a>
-                    <a href="">CV&darr;</a>
-                    <a class='active' href="">PROJECTS</a>
-                </div>
-            </div>
-        </nav>
+{% extends 'navigation.html' %}
+
+{% block title %}krnzkrv.{% endblock %}
+
+{% block content %}
         <nav id="darkNav">
             <div class="nav-wrapper">
                 <span>KARINA</span>
@@ -105,10 +88,14 @@
                         <span>ux-research and ui of a mobile app<br> for those looking for a place to hang out</span>
                     </div>
                     <div class="ccIMGcontainer">
-                        <img src="{{ url_for('static', filename='images/cc_first-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/cc_second-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/cc_third-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/cc_last-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/cc_first-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/cc_second-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/cc_third-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/cc_last-phone.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/cc_1920_first.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/cc_1920_second.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/cc_1920_third.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/cc_1920_last.png') }}" alt="" class="bigimg">
                     </div>
                 </div>
                 <div class="betterCopy">
@@ -125,10 +112,14 @@
                         <span>ui of a mobile app<br> for copywriters</span>
                     </div>
                     <div class="bcIMGcontainer">
-                        <img src="{{ url_for('static', filename='images/bc_first-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/bc_last-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/bc_third-phone.png') }}" alt="">
-                        <img src="{{ url_for('static', filename='images/bc_second-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/bc_first-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/bc_last-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/bc_third-phone.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/bc_second-phone.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/bc_1920_first.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/bc_1920_second.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/bc_1920_third.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/bc_1920_last.png') }}" alt="" class="bigimg">
                     </div>
                 </div>
             </div>
@@ -147,9 +138,11 @@
                         <span>merch design for women's<br> crisis center</span>
                     </div>
                     <div class="nnccIMGcontainer">
-                        <img id="nncc_woman" src="{{ url_for('static', filename='images/nncc_woman.png') }}" alt="">
-                        <img id="black_t-shirt" src="{{ url_for('static', filename='images/nncc_black_t-shirt.png') }}" alt="">
-                        <img id="white_t-shirt" src="{{ url_for('static', filename='images/nncc_shite_t-shirt.png') }}" alt="">
+                        <img id="nncc_woman" src="{{ url_for('static', filename='images/nncc_woman.svg') }}" alt="">
+                        <img class="smallimg black_t-shirt" src="{{ url_for('static', filename='images/nncc_black_t-shirt.png') }}" alt="">
+                        <img class="smallimg white_t-shirt" src="{{ url_for('static', filename='images/nncc_shite_t-shirt.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/t-shirt_black_1920.png') }}" alt="" class="bigimg black_t-shirt">
+                        <img src="{{ url_for('static', filename='images/t-shirt_white_1920.png') }}" alt="" class="bigimg white_t-shirt">
                     </div>
                 </div>
                 <div class="fincherBook">
@@ -166,8 +159,10 @@
                         <span>design of the book<br> for fincherlovers</span>
                     </div>
                     <div class="fincherBookIMGcontainer">
-                        <img src="{{ url_for('static', filename='images/Fincher_first.png') }}" alt="">
-                        <img id="fincher_second" src="{{ url_for('static', filename='images/fincher_second.png') }}" alt="">
+                        <img class='smallimg' src="{{ url_for('static', filename='images/Fincher_first.png') }}" alt="">
+                        <img class="smallimg fincher_second" src="{{ url_for('static', filename='images/fincher_second.png') }}" alt="">
+                        <img src="{{ url_for('static', filename='images/fincher_1920_first.png') }}" alt="" class="bigimg">
+                        <img src="{{ url_for('static', filename='images/fincher_1920_second.png') }}" alt="" class="bigimg fincher_second">
                     </div>
                 </div>
             </div>
@@ -221,6 +216,4 @@
             </div>
             <span>LAST EDIT: 10.2023</span>
         </div>
-    </div>
-</body>
-</html>
+{% endblock %}
