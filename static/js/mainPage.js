@@ -29,9 +29,11 @@ let changeMode = (check, navLine) => {
     const contactsWhite = document.getElementsByClassName('contactsWrapper')
     const animatedMentalPosters = document.getElementsByClassName('animatedPosters');
     const animatedCartoonPosters = document.getElementsByClassName('cartoonAnimatedPosters');
-
+    var timerId
     function changeStyle() {
-        if (check.checked === true) {
+
+
+        if (check.checked == true) {
             document.body.style.background = 'var(--darkmode-bg-color)';
             video_light[0].style.display = 'none';
             video_dark[0].style.display = 'block';
@@ -53,7 +55,7 @@ let changeMode = (check, navLine) => {
             contactsDark[0].style.display = 'flex';
 
             let i = 0;
-            let timerId = setInterval(() => {
+            timerId = setInterval(() => {
                 if (i > 0) {
                     animatedMentalPosters[i-1].style.zIndex = '-1';
                     animatedCartoonPosters[i-1].style.zIndex = '-1';
@@ -67,8 +69,7 @@ let changeMode = (check, navLine) => {
                     animatedCartoonPosters[4].style.zIndex = '-1';
                 }
                 ++i;
-            }, 750)
-
+            }, 750);
         } else {
             document.body.style.background = 'var(--main-bg-color)';
             video_light[0].style.display = 'block';
