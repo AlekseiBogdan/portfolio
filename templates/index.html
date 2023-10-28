@@ -13,12 +13,16 @@
                 </div>
             </div>
         </nav>
-        <video autoplay muted loop height="860" class="lead_video white_mode">
-            <source src="{{ url_for('static', filename='videos/lead_aspirations.mp4') }}">
-        </video>
-        <video autoplay muted loop height="860" class="lead_video dark_mode">
-            <source src="{{ url_for('static', filename='videos/lead_inspirations.mp4') }}">
-        </video>
+        <div class="lead_video white_mode">
+            <video id="white_mode_video" autoplay muted loop height="860" class="lead_video white_mode">
+                <source src="{{ url_for('static', filename='videos/lead_aspirations.mp4') }}">
+            </video>
+        </div>
+        <div class="lead_video dark_mode">
+            <video id="dark_mode_video" autoplay muted loop>
+                <source src="{{ url_for('static', filename='videos/lead_inspirations.mp4') }}">
+            </video>
+                </div>
         <div class="modeShowWrapper">
             <span class="mainMode">MAIN</span>
             <span class="mainMode darkMain">OTHER</span>

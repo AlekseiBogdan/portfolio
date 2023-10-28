@@ -27,7 +27,7 @@ body {
     #navScrollLine {
     position: sticky;
     border: 1px solid #DADADA;
-    top: 64px;
+    top: 62px;
     z-index: 100;
     width: 100vw;
     opacity: 0;
@@ -47,7 +47,6 @@ nav {
     font-size: 24px;
     z-index: 50;
     background: var(--main-bg-color);
-    /*border-bottom: 1px solid #000;*/
 }
 
 nav a {
@@ -92,6 +91,25 @@ nav a {
     top: 0;
     z-index: -1;
     margin-left: 5px;
+    & .white_mode {
+        position: absolute;
+    }
+
+    & .dark_mode {
+        position: absolute;
+
+    }
+}
+
+#dark_mode_video {
+    margin-top: 185px;
+    margin-left: -1px;
+    height: 536px;
+    width: 1334px;
+}
+
+#white_mode_video {
+    margin-left: -1px;
 }
 
 .modeShowWrapper {
