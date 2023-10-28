@@ -1,5 +1,6 @@
 @import url('darkmode.css');
 @import url('info.css');
+@import url('fotolarek.css');
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: local('HelveticaNeueCyr'),
@@ -182,6 +183,19 @@ nav a {
                 display: flex;
                 gap: 10px;
 
+                & a {
+                    color: var(--main-text-color);
+                    text-decoration: none;
+
+                    &:visited {
+                        color: var(--main-text-color);
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: var(--main-hover-color);
+                    }
+                }
             }
 
             & .projectYear {

@@ -35,6 +35,10 @@ def hello_world():
 def info():
     return render_template('info.html')
 
+@app.route('/fotolarek')
+def fotolarek():
+    return render_template('fotolarek.html')
+
 @app.route('/get_feedback', methods=['POST'])
 def get_feedback():
     name = request.form.get('name')

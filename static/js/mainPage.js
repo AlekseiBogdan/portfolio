@@ -29,6 +29,8 @@ let changeMode = (check, navLine) => {
     const contactsWhite = document.getElementsByClassName('contactsWrapper')
     const animatedMentalPosters = document.getElementsByClassName('animatedPosters');
     const animatedCartoonPosters = document.getElementsByClassName('cartoonAnimatedPosters');
+    const postersWrapper = document.getElementsByClassName('darkmodeWrapper');
+
     var timerId
     function changeStyle() {
 
@@ -54,6 +56,7 @@ let changeMode = (check, navLine) => {
             contactsWhite[0].style.display = 'none';
             contactsDark[0].style.display = 'flex';
 
+
             let i = 0;
             timerId = setInterval(() => {
                 if (i > 0) {
@@ -62,7 +65,7 @@ let changeMode = (check, navLine) => {
                 }
                 animatedMentalPosters[i].style.zIndex = '1';
                 animatedCartoonPosters[i].style.zIndex = '1';
-                console.log(i);
+
                 if (i === 4) {
                     i -= 5;
                     animatedMentalPosters[4].style.zIndex = '-1';

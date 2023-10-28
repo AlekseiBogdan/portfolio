@@ -7,6 +7,107 @@
     --darkmode-hover-color: #CA0000;
 }
 
+@keyframes cucumber1move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 13%;
+        left: 9%;
+        transform: rotate(70deg);
+    }
+
+    60% {
+        top: 67%;
+        left: 94%;
+        transform: rotate(15deg);
+    }
+
+    75% {
+        top: 54%;
+        left: 25%;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+@keyframes cucumber2move {
+    0% {
+        top: 15%;
+        left: -7%;
+    }
+    15% {
+        top: 9%;
+        left: 25%;
+        transform: rotate(45deg);
+    }
+
+    30% {
+        top: 60%;
+        left: 79%;
+    }
+
+    50% {
+        top: 90%;
+        left: 54%;
+        transform: rotate(90deg);
+    }
+
+    65% {
+        top: 44%;
+        left: 66%;
+        transform: rotate(30deg);
+    }
+
+    85% {
+        top: 25%;
+        left: 10%;
+        transform: scale(150%);
+    }
+
+    100% {
+        top: 15%;
+        left: -7%;
+        transform: scale(100%) rotate(0deg);
+    }
+}
+
+@keyframes cucumber3move {
+    0% {
+        top: 50%;
+        left: 3%;
+    }
+
+    50% {
+        top: 3%;
+        left: 67%;
+        transform: rotate(30deg) scale(120%);
+    }
+
+    70% {
+        top: 22%;
+        left: 17%;
+        transform: rotate(60deg);
+    }
+
+    85% {
+        top: 45%;
+        left: 90%;
+        transform: rotate(0deg) scale(110%);
+    }
+
+    100% {
+        top: 50%;
+        left: 3%;
+        transform: scale(100%);
+    }
+}
+
 #darkNav {
     background-color: var(--darkmode-bg-color);
     display: none;
@@ -44,6 +145,11 @@
     display: none;
 }
 
+.darkmodeWrapper {
+    display: none;
+    position: relative;
+}
+
 .randomThings {
     margin: 0 0 0 40px;
     display: none;
@@ -59,6 +165,23 @@
         left: 0;
     }
 
+}
+
+.cucumbers {
+    position: absolute;
+    z-index: 200;
+}
+
+#first_cucumber {
+    animation: cucumber1move 30s ease-in-out infinite;
+}
+
+#second_cucumber {
+    animation: cucumber2move 30s ease-in-out infinite;
+}
+
+#third_cucumber {
+    animation: cucumber3move 30s ease-in-out infinite;
 }
 
 .mentalPosters {
