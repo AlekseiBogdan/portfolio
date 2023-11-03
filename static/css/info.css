@@ -1,0 +1,200 @@
+.infoHeader {
+    display: inline-block;
+    margin: 132px 0 20px 40px;
+    font-size: 74px;
+    font-weight: 700;
+}
+
+.infoIMGcontainer {
+    margin: 0 40px 100px 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.infoSubHeader {
+    display: inline-block;
+    margin: 0 40px 50px 40px;
+    font-size: 74px;
+    font-weight: 700;
+}
+
+.skillsContainer {
+    display: flex;
+    gap: 162px;
+    margin: 0 0 100px 40px;
+}
+
+.skillsFirstRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 44px;
+}
+
+.skillsSecondRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 44px;
+}
+
+.workAndEducation {
+    display: flex;
+    gap: 50px;
+    margin: 0 40px 100px 40px;
+}
+
+.workSubHeader {
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+.lad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.ladWrapper {
+    display: flex;
+
+    & .length {
+        font-size: 24px;
+    }
+}
+
+.workExpSubHeader {
+    font-size: 44px;
+    display: inline-block;
+    width: 440px;
+    margin-right: 103px;
+}
+
+.ladDescription {
+    font-size: 24px;
+}
+
+.freelance {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.freelanceWrapper {
+    display: flex;
+
+    & .length {
+        font-size: 24px;
+    }
+}
+
+.freelanceDescription {
+    font-size: 24px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.educationSubHeader {
+    font-size: 74px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.bachelor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.bachelorWrapper {
+    display: flex;
+
+    & .length {
+        font-size: 24px;
+    }
+}
+
+.hseDescription {
+    font-size: 24px;
+}
+
+.educationExpSubHeader {
+    font-size: 44px;
+    display: inline-block;
+    margin-right: 188px;
+}
+
+.additionalEducation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addEduWrapper {
+    display: flex;
+
+    & .length {
+        font-size: 24px;
+    }
+}
+
+.addExpSubHeader {
+    font-size: 44px;
+    display: inline-block;
+    margin-right: 78px;
+}
+
+.addEduDescription {
+    font-size: 24px;
+}
+
+.infoContacts {
+    display: flex;
+    margin: 0 40px 50px 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.TG {
+    font-size: 74px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    &:visited {
+        color: #000;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #900000;
+    }
+}
+
+.mail {
+    font-size: 74px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+    &:visited {
+        color: #000;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #900000;
+    }
+}
+
+.date {
+    font-size: 24px;
+}
+

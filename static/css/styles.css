@@ -1,0 +1,593 @@
+@import url('darkmode.css');
+@import url('info.css');
+@import url('fotolarek.css');
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: local('HelveticaNeueCyr'),
+        url(../fonts/HelveticaNeueCyr-Roman.otf),
+        url(../fonts/HelveticaNeueCyr-Bold.otf);
+}
+
+:root {
+    --main-bg-color: #fff;
+    --darkmode-bg-color: #090909;
+    --main-text-color: #000;
+    --darkmode-text-color: #fff;
+    --main-hover-color: #900000;
+    --darkmode-hover-color: #CA0000;
+}
+
+body {
+    font-family: HelveticaNeueCyr;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media screen and (min-width: 1440px) {
+    #navScrollLine {
+    position: sticky;
+    border: 1px solid #DADADA;
+    top: 62px;
+    z-index: 100;
+    width: 100vw;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: auto;
+    position: relative;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding: 24px 38px 15px 40px;
+    font-size: 24px;
+    z-index: 50;
+    background: var(--main-bg-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--main-text-color);
+
+
+
+    &:visited {
+        color: var(--main-text-color);
+    }
+
+    &:hover {
+        color: var(--main-hover-color);
+    }
+
+    &:active {
+        color: var(--main-hover-color);
+    }
+
+    &.active {
+        color: var(--main-hover-color);
+    }
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+        margin-right: 821px;
+    }
+
+    .nav-links-wrapper {
+        display: flex;
+        gap: 108px;
+    }
+}
+
+.lead_video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin-left: 5px;
+    & .white_mode {
+        position: absolute;
+    }
+
+    & .dark_mode {
+        position: absolute;
+
+    }
+}
+
+#dark_mode_video {
+    margin-top: 185px;
+    margin-left: -1px;
+    height: 536px;
+    width: 1334px;
+}
+
+#white_mode_video {
+    margin-left: -1px;
+}
+
+.modeShowWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 900px 40px 0 40px;
+    font-size: 24px;
+}
+
+.projectsAndSwitcher {
+    display: flex;
+    margin: 20px 40px 0 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    .projectsHeader {
+        font-weight: 700;
+        font-size: 74px;
+    }
+
+    .switchContainer {
+        padding-bottom: 2px;
+
+        & input {
+            display: none;
+        }
+
+        & label {
+            display: inline-block;
+            position: relative;
+            transition: 300ms ease-in-out;
+            width: 80px;
+            height: 46px;
+            outline: 2px solid black;
+            border-radius: 50px;
+            cursor: pointer;
+
+            & div {
+                position: absolute;
+                width: 42px;
+                height: 42px;
+                top: 2px;
+                left: 2px;
+                background: #000;
+                border-radius: 50%;
+                transition: 300ms ease-in-out;
+            }
+        }
+
+    }
+}
+
+.switch:checked + label {
+    background: #900000;
+    transition: 300ms ease-in-out;
+    outline: none;
+
+    & div {
+        background: #fff;
+        left: 35px;
+    }
+}
+
+.behanceSVG {
+    fill: var(--main-text-color);
+    cursor: pointer;
+
+    &:hover {
+        fill: var(--main-hover-color);
+    }
+}
+
+.projectsHeaders:hover {
+    color: #900000;
+    cursor: pointer;
+}
+
+.projects {
+    margin: 60px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+
+    & .fotolarek {
+        & .fotolarekHeaderWrapper {
+            display: flex;
+            justify-content: space-between;
+
+            & .fotolarekProjectHeader {
+                font-size: 44px;
+                display: flex;
+                gap: 10px;
+
+                & a {
+                    color: var(--main-text-color);
+                    text-decoration: none;
+
+                    &:visited {
+                        color: var(--main-text-color);
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: var(--main-hover-color);
+                    }
+                }
+            }
+
+            & .projectYear {
+                font-size: 24px;
+            }
+        }
+
+        & .fotolarekDescription {
+            margin: 10px 0 30px 0;
+
+            & span {
+                display: inline-block;
+                width: 300px;
+                font-size: 24px;
+            }
+        }
+
+        & .fotolarekImg {
+            width: 1360px;
+            height: 425px;
+        }
+    }
+
+    & .mobileAppsProjects {
+        margin: 80px 0 80px 0;
+        display: flex;
+        gap: 61px;
+        & .capturedCulture {
+
+            & .ccHeaderWrapper {
+                display: flex;
+                margin-bottom: 10px;
+
+                & .capturedCultureHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 38px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .ccDescription {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            & .ccIMGcontainer {
+                display: flex;
+                gap: 10px;
+
+                & .bigimg {
+                    display: none;
+                }
+            }
+        }
+
+        & .betterCopy {
+
+            & .bcHeaderWrapper {
+                display: flex;
+                margin-bottom: 10px;
+
+                & .bcHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 274px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .bcDescription {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            & .bcIMGcontainer {
+                display: flex;
+                gap: 10px;
+
+                & .bigimg {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    & .nnccProjectAndFincherBook {
+        display: flex;
+        gap: 61px;
+
+        & .nncc {
+            & .nnccHeaderWrapper {
+                display: flex;
+                margin-bottom: 10px;
+
+                & .nnccHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 389px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+
+            & .nnccDescription {
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+
+            & .nnccIMGcontainer {
+                position: relative;
+
+                & .bigimg {
+                    display: none;
+                }
+
+                & #nncc_woman {
+                    position: absolute;
+                    width: 305.883px;
+                    height: 321.778px;
+                    z-index: -2;
+                    top: -51px;
+                    left: 121px;
+                }
+
+                & .white_t-shirt {
+                    position: absolute;
+                    z-index: -1;
+                    left: 211px;
+                }
+            }
+        }
+
+        & .fincherBook {
+
+            & .fincherBookHeaderWrapper {
+                display: flex;
+                margin-bottom: 10px;
+
+                & .fincherBookHeader {
+                    display: flex;
+                    font-size: 44px;
+                    gap: 10px;
+                    margin-right: 142px;
+                }
+
+                & .projectYear {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.fincherBookDescription {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.fincherBookIMGcontainer {
+    position: relative;
+
+    & .fincher_second {
+        position: absolute;
+        z-index: -1;
+        left: 143px;
+        top: -39px;
+    }
+}
+
+#feedback {
+    height: 1px;
+    margin-bottom: 59px;
+}
+
+.feedback {
+    margin: 0 40px 10px 40px;
+    & span {
+        display: inline-block;
+        font-size: 74px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    & .feedback-form {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        & #nameContactsWrapper {
+            display: flex;
+            gap: 20px;
+        }
+        & .formNameWrapper {
+            position: relative;
+            & .inputHeader {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            & .placeholder {
+                position: absolute;
+                user-select: none;
+                cursor: text;
+                top: 48px;
+                left: 0px;
+                color: #8F8F8F;
+            }
+
+            & #name {
+                border: none;
+                border-bottom: 2px solid #000;
+                width: 670px;
+                padding: 15px 0 10px 0;
+                font-size: 24px;
+            }
+        }
+
+        & .formContactsWrapper {
+            position: relative;
+            & .inputHeader {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            & .placeholder {
+                position: absolute;
+                user-select: none;
+                cursor: text;
+                top: 48px;
+                left: 0px;
+                color: #8F8F8F;
+            }
+
+            & #contactsInput {
+                border: none;
+                border-bottom: 2px solid #000;
+                width: 670px;
+                padding: 15px 0 10px 0;
+                font-size: 24px;
+            }
+        }
+
+        & .textareaBtnWrapper {
+            display: flex;
+            gap: 60px;
+            flex-direction: column;
+            & .formTextareaWrapper {
+                position: relative;
+                & .inputHeader {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                & .placeholder {
+                    position: absolute;
+                    user-select: none;
+                    cursor: text;
+                    top: 48px;
+                    left: 0;
+                    color: #8F8F8F;
+                }
+
+                & #message {
+                    border: none;
+                    border-bottom: 2px solid #000;
+                    width: 670px;
+                    height: 26px;
+                    padding: 15px 0 10px 0;
+                    font-size: 24px;
+                    resize: none;
+                    scrollbar-width: none;
+                    font-family: 'HelveticaNeueCyr';
+                }
+            }
+
+            & #submit-btn {
+                width: 105px;
+                height: 49px;
+                font-size: 24px;
+                background: transparent;
+                border-radius: 50px;
+                cursor: pointer;
+                border: 2px solid black;
+
+                &:hover {
+                    color: white;
+                    background-color: var(--main-hover-color);
+                    border: none;
+                }
+
+                &:active {
+                    color: white;
+                    background-color: #000;
+                    border: none;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+#message::-webkit-scrollbar {
+    display: none;
+}
+
+#name:focus {
+    outline: none;
+}
+
+#name:focus + label{
+    display: none;
+}
+
+#contactsInput:focus {
+    outline: none;
+}
+
+#contactsInput:focus + label {
+    display: none;
+}
+
+#message:focus {
+    outline: none;
+}
+
+#message:focus + label {
+    display: none;
+}
+
+.welcome_video {
+    width: 816px;
+    height: 216px;
+    margin: 0 auto 230px auto;
+}
+
+.contactsWrapper {
+    display: flex;
+    margin: 0 40px 60px 40px;
+    justify-content: space-between;
+    font-size: 24px;
+
+    & .contacts {
+        display: flex;
+        gap: 68px;
+
+        & a {
+            text-decoration: none;
+            color: var(--main-text-color);
+
+            &:visited {
+                color: var(--main-text-color);
+            }
+
+            &:hover {
+                color: var(--main-hover-color);
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,312 @@
+:root {
+    --main-bg-color: #fff;
+    --darkmode-bg-color: #090909;
+    --main-text-color: #000;
+    --darkmode-text-color: #fff;
+    --main-hover-color: #900000;
+    --darkmode-hover-color: #CA0000;
+}
+
+@keyframes cucumber1move {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 13%;
+        left: 9%;
+        transform: rotate(70deg);
+    }
+
+    60% {
+        top: 67%;
+        left: 94%;
+        transform: rotate(15deg);
+    }
+
+    75% {
+        top: 54%;
+        left: 25%;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+}
+@keyframes cucumber2move {
+    0% {
+        top: 15%;
+        left: -7%;
+    }
+    15% {
+        top: 9%;
+        left: 25%;
+        transform: rotate(45deg);
+    }
+
+    30% {
+        top: 60%;
+        left: 79%;
+    }
+
+    50% {
+        top: 90%;
+        left: 54%;
+        transform: rotate(90deg);
+    }
+
+    65% {
+        top: 44%;
+        left: 66%;
+        transform: rotate(30deg);
+    }
+
+    85% {
+        top: 25%;
+        left: 10%;
+        transform: scale(150%);
+    }
+
+    100% {
+        top: 15%;
+        left: -7%;
+        transform: scale(100%) rotate(0deg);
+    }
+}
+
+@keyframes cucumber3move {
+    0% {
+        top: 50%;
+        left: 3%;
+    }
+
+    50% {
+        top: 3%;
+        left: 67%;
+        transform: rotate(30deg) scale(120%);
+    }
+
+    70% {
+        top: 22%;
+        left: 17%;
+        transform: rotate(60deg);
+    }
+
+    85% {
+        top: 45%;
+        left: 90%;
+        transform: rotate(0deg) scale(110%);
+    }
+
+    100% {
+        top: 50%;
+        left: 3%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes cucumber4move {
+    0% {
+        top: 5%;
+        left: 17%;
+    }
+
+    30% {
+        top: 15%;
+        left: 76%;
+        transform: rotate(66deg);
+    }
+
+    60% {
+        top: 47%;
+        left: 33%;
+        transform: scale(130%);
+    }
+
+    100% {
+        top: 5%;
+        left: 17%;
+        transform: rotate(0deg) scale(100%);
+    }
+}
+
+@keyframes cucumber5move {
+    0% {
+        top: 87%;
+        left: 12%;
+    }
+
+    30% {
+        top: 12%;
+        left: 99%;
+        transform: rotate(55deg);
+    }
+
+    60% {
+        top: 45%;
+        left: 45%;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        top: 87%;
+        left: 12%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cucumber6move {
+    0% {
+        top: 50%;
+        left: 50%;
+    }
+
+    30% {
+        top: 2%;
+        transform: rotate(360deg) scale(115%);
+    }
+
+    60% {
+        top: 76%;
+        left: 13%;
+        transform: scale(75%);
+    }
+
+    100% {
+        top: 50%;
+        left: 50%;
+        transform: scale(100%) rotate(0deg);
+    }
+}
+
+#darkNav {
+    background-color: var(--darkmode-bg-color);
+    display: none;
+    color: var(--darkmode-text-color);
+
+    & a {
+        color: var(--darkmode-text-color);
+    }
+
+    & a:hover {
+        color: var(--darkmode-hover-color);
+    }
+
+    & .active {
+        color: var(--darkmode-hover-color);
+    }
+}
+
+.dark_mode {
+    display: none;
+}
+
+.darkMain {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.darkOther {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.darkHeader {
+    color: var(--darkmode-text-color);
+    display: none;
+}
+
+.darkmodeWrapper {
+    display: none;
+    position: relative;
+}
+
+.randomThings {
+    margin: 0 0 0 40px;
+    display: none;
+}
+
+.cartoonPosters {
+    width: 670px;
+    height: 945px;
+    position: relative;
+
+    & img {
+        position: absolute;
+        left: 0;
+    }
+
+}
+
+.cucumbers {
+    position: absolute;
+    z-index: 200;
+}
+
+#first_cucumber {
+    animation: cucumber1move 30s ease-in-out infinite;
+}
+
+#second_cucumber {
+    animation: cucumber2move 30s ease-in-out infinite;
+}
+
+#third_cucumber {
+    animation: cucumber3move 30s ease-in-out infinite;
+}
+
+#fourth_cucumber {
+    animation: cucumber4move 30s ease-in-out infinite;
+}
+
+#fifth_cucumber {
+    animation: cucumber5move 30s ease-in-out infinite;
+}
+
+#sixth_cucumber {
+    animation: cucumber6move 30s ease-in-out infinite;
+}
+
+.mentalPosters {
+    margin-top: -359px;
+    position: relative;
+
+    & img {
+        position: absolute;
+    }
+}
+
+#redImage {
+    margin-left: 690px;
+    margin-top: -361px;
+}
+
+.darkmodeContacts {
+
+    display: none;
+    margin: auto 40px 60px 40px;
+    justify-content: space-between;
+    font-size: 24px;
+    color: var(--darkmode-text-color);
+
+    & .contacts {
+        display: flex;
+        gap: 68px;
+
+        & a {
+            text-decoration: none;
+            color: var(--darkmode-text-color);
+
+            &:visited {
+                color: var(--darkmode-text-color);
+            }
+
+            &:hover {
+                color: var(--darkmode-hover-color);
+            }
+        }
+    }
+}

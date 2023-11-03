@@ -1,0 +1,64 @@
+.fotolarekPage {
+    margin: 54px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fotolarekWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & .projectYear {
+        font-size: 24px;
+    }
+}
+
+.fotolarekHeaderSVG {
+    display: flex;
+    font-size: 44px;
+    gap: 10px;
+}
+
+.fotolarekDescriptionPage {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.fotolarekIMGcontainer {
+    margin: 20px 0 100px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#brochure {
+    width: 1360px;
+    background-color: #000;
+}
+
+#envelope {
+    position: absolute;
+    top: 1900px;
+    left: 690px;
+}
+
+.laptop_fotolarek {
+    width: 1120px;
+    height: 629px;
+    margin: 0 auto 100px auto;
+    position: relative;
+
+    & img {
+        position: absolute;
+    }
+
+    & #screen {
+        width: 856px;
+        top: 10px;
+        left: 130px;
+    }
+}
+
