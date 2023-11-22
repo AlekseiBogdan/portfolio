@@ -113,7 +113,6 @@ let formProcessing = function(placeholder, name, contacts, textarea) {
     function changeHeight() {
         textarea.style.height = '26px';
         textarea.style.height = textarea.scrollHeight - 28 + 'px';
-
     }
 
 }
