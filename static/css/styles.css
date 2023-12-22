@@ -89,7 +89,7 @@ nav a {
 
 .lead_video {
     position: absolute;
-    top: 0;
+    top: -30px;
     z-index: -1;
     transform: scale(0.95);
     margin-left: 5px;
@@ -182,10 +182,6 @@ img {
 .behanceSVG {
     fill: var(--main-text-color);
     cursor: pointer;
-
-    &:hover {
-        fill: var(--main-hover-color);
-    }
 }
 
 .fotolarekImg {
@@ -210,17 +206,9 @@ img {
                 gap: 10px;
 
                 & a {
-                    color: var(--main-text-color);
-                    text-decoration: none;
-
-                    &:visited {
-                        color: var(--main-text-color);
-                        text-decoration: none;
-                    }
-
-                    &:hover {
-                        color: var(--main-hover-color);
-                    }
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
                 }
             }
 
@@ -252,6 +240,12 @@ img {
                     font-size: 44px;
                     gap: 10px;
                     margin-right: 38px;
+
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
                 }
             }
 
@@ -271,6 +265,12 @@ img {
             & .bcHeaderWrapper {
                 display: flex;
                 margin-bottom: 10px;
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
             }
 
             & .bcDescription {
@@ -300,6 +300,12 @@ img {
                     font-size: 44px;
                     gap: 10px;
                     margin-right: 389px;
+
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
                 }
 
                 
@@ -350,9 +356,16 @@ img {
 
 .fincherBookHeader {
     display: flex;
+    justify-content: center;
     font-size: 44px;
     gap: 10px;
     margin-right: 120px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 .fincherBookDescription {
@@ -368,6 +381,24 @@ img {
         z-index: -1;
         left: 143px;
         top: -39px;
+    }
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration: none;
+
+    &:visited {
+        color: var(--main-text-color);
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: var(--main-hover-color);
+
+        & svg {
+            fill: var(--main-hover-color);
+        }
     }
 }
 
@@ -391,6 +422,12 @@ img {
     font-size: 44px;
     gap: 10px;
     margin-right: 131px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 .doomscrollingDescription {
@@ -399,7 +436,7 @@ img {
 }
 
 .doomscrollingIMGcontainer {
-    margin-left: 16px;
+    margin-left: 35px;
 }
 
 .cinteticaHeaderWrapper {
@@ -411,7 +448,13 @@ img {
     display: flex;
     font-size: 44px;
     gap: 10px;
-    margin-right: 350px;
+    margin-right: 270px;
+
+    & a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 }
 
 .cinteticaDescription {
@@ -420,7 +463,7 @@ img {
 }
 
 .cinteticaIMGcontainer {
-    margin-left: 51px;
+    margin-left: 70px;
 }
 
 #feedback {
@@ -455,14 +498,14 @@ img {
                 margin-bottom: 10px;
             }
 
-            & .placeholder {
+            /* & .placeholder {
                 position: absolute;
                 user-select: none;
                 cursor: text;
                 top: 48px;
                 left: 0px;
                 color: #8F8F8F;
-            }
+            } */
 
             & #name {
                 border: none;
@@ -480,14 +523,14 @@ img {
                 margin-bottom: 10px;
             }
 
-            & .placeholder {
+            /* & .placeholder {
                 position: absolute;
                 user-select: none;
                 cursor: text;
                 top: 48px;
                 left: 0px;
                 color: #8F8F8F;
-            }
+            } */
 
             & #contactsInput {
                 border: none;
@@ -509,14 +552,14 @@ img {
                     margin-bottom: 10px;
                 }
 
-                & .placeholder {
+                /* & .placeholder {
                     position: absolute;
                     user-select: none;
                     cursor: text;
                     top: 48px;
                     left: 0;
                     color: #8F8F8F;
-                }
+                } */
 
                 & #message {
                     border: none;
@@ -568,25 +611,29 @@ img {
     outline: none;
 }
 
-#name:focus + label{
+/* #name:focus + label{
     display: none;
 }
+
+#name:not(:focus) + label{
+    display: block;
+} */
 
 #contactsInput:focus {
     outline: none;
 }
 
-#contactsInput:focus + label {
+/* #contactsInput:focus + label {
     display: none;
-}
+} */
 
 #message:focus {
     outline: none;
 }
 
-#message:focus + label {
+/* #message:focus + label {
     display: none;
-}
+} */
 
 .welcome_video {
     width: 816px;
@@ -663,4 +710,9 @@ img {
     .bcIMGcontainer {
         gap: 10px;
     }
+
+    .cinteticaHeader {
+        margin-right: 350px;
+    }
+    
 }
