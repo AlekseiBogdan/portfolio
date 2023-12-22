@@ -13,22 +13,27 @@
     <div class="wrapper">
         <nav>
             <div class="nav-wrapper">
-                <a href="">KARINA</a>
+                <a href="index.html">KARINA</a>
                 <div class="nav-links-wrapper">
                     <a href="info.html">INFO</a>
-                    <a href="">CV&darr;</a>
+                    <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
                     <a class="active" href="">PROJECTS</a>
+                </div>
+                <div class="mobile_nav">
+                    <a href="info.html">INFO</a>
+                    <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
                 </div>
             </div>
         </nav>
         <nav id="darkNav">
             <div class="nav-wrapper">
-                <span>KARINA</span>
+                <a href="index.html">KARINA</a>
                 <div class="nav-links-wrapper">
                     <a href="info.html">INFO</a>
-                    <a href="">CV&darr;</a>
+                    <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
                     <a class='active' href="">PROJECTS</a>
                 </div>
+                
             </div>
         </nav>
         
@@ -42,7 +47,11 @@
                 <source src="static/videos/lead_inspirations.mp4">
             </video>
         </div>
-        
+        <div class="mobile_text_wrapper">
+            <span class="mobile_text">I’m Karina. I am a multi-tool designer who is ready for tasks of different complexity.</span>
+            <img src="static/images/omniman.png" alt="" id="mobile_text_image_first">
+            <img src="static/images/anime_karina.png" alt="" id="mobile_text_image_second">
+        </div>
         <div class="modeShowWrapper">
             <span class="mainMode">MAIN</span>
             <span class="mainMode darkMain">OTHER</span>
@@ -73,8 +82,6 @@
                     <img class='cartoonAnimatedPosters' src="static/images/nemo.png" alt="">
                     <img class='cartoonAnimatedPosters' src="static/images/aang.png" alt="">
                 </div>
-                <img height='589' width="676" src="static/images/glassLetters.png" alt="">
-                <img src="static/images/keithHaring.png" alt="">
                 <div class="mentalPosters">
                     <img class='animatedPosters' src="static/images/schizophrenia.png" alt="">
                     <img class='animatedPosters' src="static/images/depression.png" alt="">
@@ -82,7 +89,9 @@
                     <img class='animatedPosters' src="static/images/bipolar_disorder.png" alt="">
                     <img class='animatedPosters' src="static/images/derealisation.png" alt="">
                 </div>
-                <img id='redImage' width="676" height="342" src="static/images/redbgLetters.png" alt="">
+                <img src="static/images/keithHaring.png" alt="" id="keith">
+                <img src="static/images/signal_poster.png" alt="" id="signal">
+                <img height='1183' width="1357" src="static/images/glass_letters.png" alt="" id="glassLetters">
         </section>
         <section class="projects">
             <div class="fotolarek">
@@ -100,6 +109,7 @@
                     <span>rebranding for an online store of filmtape</span>
                 </div>
                 <img class='fotolarekImg' src="static/images/fotolarek.png">
+                <img src="static/images/fotolarek_mobile.svg" alt="" class="fotolarekImg_mobile">
             </div>
             <div class="mobileAppsProjects">
                 <div class="capturedCulture">
@@ -111,7 +121,8 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.11999 18.4001C6.11999 18.0474 6.26011 17.7091 6.50953 17.4596C6.75895 17.2102 7.09725 17.0701 7.44999 17.0701L26.3147 17.0701L18.9412 10.0477C18.6993 9.80046 18.5633 9.46873 18.5619 9.12286C18.5605 8.77699 18.6939 8.44419 18.9339 8.19505C19.1738 7.94592 19.5013 7.80004 19.847 7.78836C20.1926 7.77668 20.5293 7.90012 20.7855 8.13249L30.5388 17.4425C30.6675 17.5666 30.7699 17.7153 30.8398 17.8798C30.9098 18.0444 30.9458 18.2213 30.9458 18.4001C30.9458 18.5789 30.9098 18.7558 30.8398 18.9204C30.7699 19.0849 30.6675 19.2336 30.5388 19.3577L20.7855 28.6677C20.661 28.7949 20.5122 28.8959 20.348 28.9646C20.1838 29.0333 20.0075 29.0683 19.8295 29.0676C19.6515 29.0669 19.4755 29.0305 19.3118 28.9605C19.1481 28.8905 19.0002 28.7884 18.8767 28.6601C18.7533 28.5319 18.6568 28.3802 18.593 28.2141C18.5293 28.0479 18.4995 27.8706 18.5055 27.6927C18.5115 27.5148 18.5532 27.3399 18.628 27.1784C18.7029 27.0169 18.8093 26.8721 18.9412 26.7525L26.3147 19.7301L7.44998 19.7301C7.09725 19.7301 6.75895 19.59 6.50953 19.3405C6.26011 19.0911 6.11999 18.7528 6.11999 18.4001Z" fill="white"/>
                                 </svg></a>
                         </div>
-                        <span class="projectYear">2021–23</span>
+                        <span class="projectYear ccYearPC">2021–23</span>
+                        <span class="ccYearMobile">2021–2023</span>
                     </div>
                     <div class="ccDescription">
                         <span>ux-research and ui of a mobile app<br> for those looking for a place to hang out</span>
@@ -135,7 +146,7 @@
                         <span class="projectYear">2023</span>
                     </div>
                     <div class="bcDescription">
-                        <span>ui of a mobile app<br> for copywriters</span>
+                        <span>ui of a mobile app<br class="desktopBr"> for copywriters</span>
                     </div>
                     <div class="bcIMGcontainer">
                         <img class='smallimg' src="static/images/bc_first-phone.png" alt="">
@@ -158,7 +169,7 @@
                         <span class="projectYear">2023</span>
                     </div>
                     <div class="nnccDescription">
-                        <span>merch design for women's<br> crisis center</span>
+                        <span>merch design for women's<br class="desktopBr"> crisis center</span>
                     </div>
                     <div class="nnccIMGcontainer">
                         <img id="nncc_woman" src="static/images/nncc_woman.svg" alt="">
@@ -178,10 +189,10 @@
                         <span class="projectYear">2023</span>
                     </div>
                     <div class="fincherBookDescription">
-                        <span>design of the book<br> for fincherlovers</span>
+                        <span>design of the book<br class="desktopBr"> for fincherlovers</span>
                     </div>
                     <div class="fincherBookIMGcontainer">
-                        <img src="static/images/Fincher_first.png" alt="">
+                        <img class="fincher_first" src="static/images/Fincher_first.png" alt="">
                         <img class="fincher_second" src="static/images/fincher_second.png" alt="">
                     </div>
                 </div>
@@ -218,7 +229,7 @@
                         <span class="projectYear">2023</span>
                     </div>
                         <div class="cinteticaDescription">
-                            <span>creating site&longread<br> for creative angency</span>
+                            <span>creating site&longread<br class="desktopBr"> for creative angency</span>
                         </div>
                         <div class="cinteticaIMGcontainer">
                             <img src="static/images/cintetica.png" alt="" width="528" height="322">
@@ -228,9 +239,9 @@
         </section>
         <div id="feedback"></div>
         <div class="feedback">
-            <span>LET’S START A NEW PROJECT</span>
+            <span>LET’S START A&nbsp;NEW&nbsp;PROJECT</span>
             <form class='feedback-form'>
-                <div id="nameContactsWrapper">
+                <!-- <div id="nameContactsWrapper"> -->
                     <div class="formNameWrapper">
                         <label class='inputHeader' for="name" >WHO IS THIS</label>
                         <input id='name' name='name' type="text" placeholder="Name" required>
@@ -241,7 +252,7 @@
                         <input id='contactsInput' name="contacts" type="text" placeholder="E-mail, etc." required>
                         <!-- <label for="contactsInput" class="placeholder">E-mail, etc.</label> -->
                     </div>
-                </div>
+                <!-- </div> -->
                 <div class="textareaBtnWrapper">
                     <div class="formTextareaWrapper">
                         <label class='inputHeader' for="message">SHARE YOUR THOUGHTS</label>
@@ -258,18 +269,36 @@
             </video>
         </div>
         <div class="contactsWrapper">
+            <div class="contacts_mobile_wrapper">
+                <div class="contacts_mobile">
+                    <a href="https://t.me/hahaareu" target="_blank">TG</a>
+                    <a href="https://instagram.com/karimorish?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">INST</a>
+                    <a href="mailto: idkeepunderk@mail.com">MAIL</a>
+                    <span class="mobileDateEdit">LAST EDIT: 12.2023</span>
+                </div>
+                <div class="addLinks">
+                    <a href="info.html">INFO</a>
+                    <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
+                </div>
+                <div class="upButton">
+                    <a href="#navScrollLine"><svg class="behanceSVG" width="37" height="37" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35ZM16.672 29.4363C16.9215 29.6857 17.2598 29.8258 17.6125 29.8258C17.9652 29.8258 18.3035 29.6857 18.5529 29.4363C18.8024 29.1868 18.9425 28.8486 18.9425 28.4958V9.63109L25.9649 17.0046C26.0845 17.1365 26.2293 17.2429 26.3908 17.3178C26.5523 17.3926 26.7272 17.4343 26.9051 17.4403C27.083 17.4463 27.2603 17.4165 27.4265 17.3528C27.5926 17.289 27.7443 17.1925 27.8725 17.0691C28.0008 16.9456 28.1029 16.7977 28.1729 16.634C28.2429 16.4703 28.2793 16.2943 28.28 16.1163C28.2807 15.9383 28.2457 15.762 28.177 15.5978C28.1083 15.4336 28.0073 15.2848 27.8801 15.1603L18.5701 5.40701C18.446 5.27829 18.2973 5.17591 18.1328 5.10598C17.9682 5.03604 17.7913 5 17.6125 5C17.4337 5 17.2568 5.03604 17.0922 5.10598C16.9277 5.17591 16.779 5.27829 16.6549 5.40701L7.3449 15.1603C7.11252 15.4165 6.98908 15.7532 7.00076 16.0988C7.01244 16.4445 7.15832 16.772 7.40746 17.0119C7.6566 17.2519 7.98939 17.3853 8.33526 17.3839C8.68113 17.3825 9.01286 17.2465 9.2601 17.0046L16.2825 9.63109V28.4958C16.2825 28.8486 16.4226 29.1868 16.672 29.4363Z" />
+                        </svg>
+                        </a>
+                </div>
+            </div>
             <div class="contacts">
                 <span>CONTACT ME:</span>
-                <span>mail: <a href="" target="_blank">karina</a></span>
+                <span>mail: <a href="mailto: idkeepunderk@mail.com"target="_blank">karina</a></span>
                 <span>inst: <a href="https://instagram.com/karimorish?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">@karimorish</a></span>
                 <span>tg: <a href="https://t.me/hahaareu" target="_blank">@hahaareu</a></span>
             </div>
-            <span>LAST EDIT: 12.2023</span>
+            <span class="desktopDate">LAST EDIT: 12.2023</span>
         </div>
         <div class="darkmodeContacts">
             <div class="contacts">
                 <span>CONTACT ME:</span>
-                <span>mail: <a href="" target="_blank">karina</a></span>
+                <span>mail: <a href="mailto: idkeepunderk@mail.com" target="_blank">karina</a></span>
                 <span>inst: <a href="https://instagram.com/karimorish?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">@karimorish</a></span>
                 <span>tg: <a href="https://t.me/hahaareu" target="_blank">@hahaareu</a></span>
             </div>

@@ -29,33 +29,53 @@ let changeMode = (check, navLine) => {
     const contactsWhite = document.getElementsByClassName('contactsWrapper')
     const animatedMentalPosters = document.getElementsByClassName('animatedPosters');
     const animatedCartoonPosters = document.getElementsByClassName('cartoonAnimatedPosters');
-    const postersWrapper = document.getElementsByClassName('darkmodeWrapper');
+    const mobileText = document.getElementsByClassName('mobile_text');
+    const mobileImageFirst = document.getElementById('mobile_text_image_first');
+    const mobileImageSecond = document.getElementById('mobile_text_image_second');
+    const contactsMobile = document.getElementsByClassName('contacts_mobile_wrapper')[0].getElementsByTagName('a');
+    const svgContacts = document.getElementsByClassName('behanceSVG');
+    const mobileNav = document.getElementsByClassName('mobile_nav')[0].getElementsByTagName('a');
 
     var timerId
-    function changeStyle() {
 
+    function changeStyle() {
 
         if (check.checked == true) {
             document.body.style.background = 'var(--darkmode-bg-color)';
-            video_light[0].style.display = 'none';
-            video_dark[0].style.display = 'block';
-            navBars[0].style.display = 'none';
-            navBars[1].style.display = 'block';
-            navLine.style.border = '1px solid #303030';
-            mainMode[0].style.display = 'none';
-            mainMode[1].style.display = 'block';
-            otherMode[0].style.display = 'none';
-            otherMode[1].style.display = 'block';
-            projectsHeader[0].style.display = 'none';
-            projectsHeader[1].style.display = 'block';
-            projects[0].style.display = 'none';
-            randomThings[0].style.cssText = 'display: flex; flex-wrap: wrap; gap: 20px;';
-            projectsAndSwitcher[0].style.marginBottom = '60px';
-            feedback[0].style.display = 'none';
-            welcome_vid[0].style.display = 'none';
-            contactsWhite[0].style.display = 'none';
-            contactsDark[0].style.display = 'flex';
-
+            if (window.screen.availWidth > 1365) {
+                video_light[0].style.display = 'none';
+                video_dark[0].style.display = 'block';
+                contactsWhite[0].style.display = 'none';
+                contactsDark[0].style.display = 'flex';
+                welcome_vid[0].style.display = 'none';
+                navBars[0].style.display = 'none';
+                navBars[1].style.display = 'block';
+            } else {
+                navBars[0].getElementsByTagName('a')[0].style.color = 'white';
+                for (let nav of mobileNav) {
+                    nav.style.color = 'white';
+                }
+                for (let item of contactsMobile) {
+                    item.style.color = 'white';
+                }
+                svgContacts[svgContacts.length-1].style.fill = 'white';
+                mobileText[0].style.color = '#fff';
+                mobileImageFirst.style.display = 'none';
+                mobileImageSecond.style.display = 'inline';
+            }
+                navLine.style.border = '1px solid #303030';
+                mainMode[0].style.display = 'none';
+                mainMode[1].style.display = 'block';
+                otherMode[0].style.display = 'none';
+                otherMode[1].style.display = 'block';
+                projectsHeader[0].style.display = 'none';
+                projectsHeader[1].style.display = 'block';
+                projects[0].style.display = 'none';
+                randomThings[0].style.cssText = 'display: flex; flex-wrap: wrap; gap: 20px;';
+                feedback[0].style.display = 'none';
+                
+                
+            
 
             let i = 0;
             timerId = setInterval(() => {
@@ -75,25 +95,40 @@ let changeMode = (check, navLine) => {
             }, 750);
         } else {
             document.body.style.background = 'var(--main-bg-color)';
-            video_light[0].style.display = 'block';
-            video_dark[0].style.display = 'none';
-            navBars[0].style.display = 'block';
-            navBars[1].style.display = 'none';
+            if (window.screen.availWidth > 1365) {
+                video_light[0].style.display = 'block';
+                video_dark[0].style.display = 'none';
+                contactsWhite[0].style.display = 'flex';
+                contactsDark[0].style.display = 'none';
+                welcome_vid[0].style.display = 'block';
+                navBars[0].style.display = 'block';
+                navBars[1].style.display = 'none';
+            } else {
+                navBars[0].getElementsByTagName('a')[0].style.color = 'black';
+                for (let nav of mobileNav) {
+                    nav.style.color = 'black';
+                }
+                for (let item of contactsMobile) {
+                    item.style.color = 'black';
+                }
+                svgContacts[svgContacts.length-1].style.fill = 'black';
+                mobileText[0].style.color = '#000';
+                mobileImageFirst.style.display = 'inline';
+                mobileImageSecond.style.display = 'none'
+            }
+            
             navLine.style.border = '1px solid #DADADA';
-            mainMode[0].style.display = 'block';
+            mainMode[0].style.display = 'inline';
             mainMode[1].style.display = 'none';
-            otherMode[0].style.display = 'block';
+            otherMode[0].style.display = 'inline';
             otherMode[1].style.display = 'none';
             projectsHeader[0].style.display = 'block';
             projectsHeader[1].style.display = 'none';
             projects[0].style.display = 'block';
             randomThings[0].style.display = 'none';
-            projectsAndSwitcher[0].style.marginBottom = 0;
             feedback[0].style.display = 'block';
-            welcome_vid[0].style.display = 'block';
-            contactsWhite[0].style.display = 'flex';
-            contactsDark[0].style.display = 'none';
             clearInterval(timerId);
+            
         }
     }
 }

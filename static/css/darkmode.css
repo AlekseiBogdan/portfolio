@@ -225,16 +225,33 @@
 }
 
 .randomThings {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 18px;
     display: none;
 }
 
+#keith {
+    width: 340px;
+    height: 480px;
+}
+
+#signal {
+    width: 340px;
+    height: 480px;
+}
+
+#glassLetters {
+    width: 340px;
+    height: 296px;
+}
+
 .cartoonPosters {
-    width: 670px;
-    height: 945px;
+    width: 340px;
+    height: 480px;
     position: relative;
 
     & img {
+        width: 340px;
+        height: 480px;
         position: absolute;
         left: 0;
     }
@@ -242,46 +259,19 @@
 }
 
 .cucumbers {
-    position: absolute;
-    z-index: 200;
-}
-
-#first_cucumber {
-    animation: cucumber1move 30s ease-in-out infinite;
-}
-
-#second_cucumber {
-    animation: cucumber2move 30s ease-in-out infinite;
-}
-
-#third_cucumber {
-    animation: cucumber3move 30s ease-in-out infinite;
-}
-
-#fourth_cucumber {
-    animation: cucumber4move 30s ease-in-out infinite;
-}
-
-#fifth_cucumber {
-    animation: cucumber5move 30s ease-in-out infinite;
-}
-
-#sixth_cucumber {
-    animation: cucumber6move 30s ease-in-out infinite;
+    display: none;
 }
 
 .mentalPosters {
-    margin-top: -359px;
+    width: 340px;
+    height: 480px;
     position: relative;
 
     & img {
+        width: 340px;
+        height: 480px;
         position: absolute;
     }
-}
-
-#redImage {
-    margin-left: 690px;
-    margin-top: -361px;
 }
 
 .darkmodeContacts {
@@ -310,3 +300,75 @@
         }
     }
 }
+
+@media screen and (min-width: 1366px) {
+    .mentalPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+
+    .randomThings {
+        margin: 60px 0 0 40px;
+    }
+
+    #keith {
+        width: 670px;
+        height: 945px;
+    }
+    
+    #signal {
+        width: 670px;
+        height: 945px;
+    }
+
+    #glassLetters {
+        width: 1357px;
+        height: 1183px;
+    }
+
+    .cartoonPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+
+    .cucumbers {
+        position: absolute;
+        display: block;
+        z-index: 200;
+    }
+    
+    #first_cucumber {
+        animation: cucumber1move 30s ease-in-out infinite;
+    }
+    
+    #second_cucumber {
+        animation: cucumber2move 30s ease-in-out infinite;
+    }
+    
+    #third_cucumber {
+        animation: cucumber3move 30s ease-in-out infinite;
+    }
+    
+    #fourth_cucumber {
+        animation: cucumber4move 30s ease-in-out infinite;
+    }
+    
+    #fifth_cucumber {
+        animation: cucumber5move 30s ease-in-out infinite;
+    }
+    
+    #sixth_cucumber {
+        animation: cucumber6move 30s ease-in-out infinite;
+    }
+}
+

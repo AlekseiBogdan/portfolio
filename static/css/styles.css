@@ -17,37 +17,18 @@
     --darkmode-hover-color: #CA0000;
 }
 
-@media screen and (min-width: 1366px) {
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-family: HelveticaNeueCyr;
     overflow-x: hidden;
     position: relative;
-}
-
-#navScrollLine {
-    position: sticky;
-    border: 1px solid #DADADA;
-    top: 62px;
-    z-index: 100;
-    width: 100vw;
-    opacity: 0;
-    transition: 300ms ease-in-out;
-}
-
-.wrapper {
-    width: 100%;
-    margin: auto;
-    position: relative;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    padding: 24px 38px 15px 40px;
-    font-size: 24px;
-    z-index: 50;
-    background: var(--main-bg-color);
 }
 
 nav a {
@@ -73,6 +54,613 @@ nav a {
     }
 }
 
+@media screen and (min-width: 375px) {
+    .white_mode, .dark_mode {
+        display: none;
+    }
+
+    .welcome_video {
+        display: none;
+    }
+
+    .wrapper {
+        width: 375px;
+        position: relative;
+        margin: auto;
+    }
+
+    nav {
+        width: 375px;
+        margin: auto;
+        padding: 10px 27px 55px 16px;
+        font-size: 16px;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile_nav {
+        display: flex;
+        gap: 33px;
+    }
+
+    .nav-links-wrapper {
+        display: none;
+    }
+
+    .mobile_text_wrapper {
+        width: 347px;
+        margin: 0 auto 46px auto;
+        position: relative;
+    }
+
+    .mobile_text {
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    #mobile_text_image_first {
+        position: absolute;
+        left: 260px;
+        top: 150px;
+    }
+
+    #mobile_text_image_second {
+        position: absolute;
+        left: 260px;
+        top: 150px;
+        display: none;
+    }
+
+    .modeShowWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 18px 10px 16px;
+        font-size: 16px;
+    }
+
+    .projectsAndSwitcher {
+        display: flex;
+        margin: 0 18px 16px 16px;
+        justify-content: space-between;
+        align-items: center;
+    
+        .projectsHeader {
+            font-weight: 700;
+            font-size: 36px;
+        }
+    
+        .switchContainer {
+            padding-bottom: 2px;
+    
+            & input {
+                display: none;
+            }
+    
+            & label {
+                display: inline-block;
+                position: relative;
+                transition: 300ms ease-in-out;
+                width: 55px;
+                height: 33px;
+                outline: 2px solid black;
+                border-radius: 50px;
+                cursor: pointer;
+    
+                & div {
+                    position: absolute;
+                    width: 29px;
+                    height: 29px;
+                    top: 2px;
+                    left: 2px;
+                    background: #000;
+                    border-radius: 50%;
+                    transition: 300ms ease-in-out;
+                }
+            }
+    
+        }
+    }
+
+    .switch:checked + label {
+        background: #900000;
+        transition: 300ms ease-in-out;
+        outline: none;
+    
+        & div {
+            background: #fff;
+            left: 26px;
+        }
+    }
+
+    a {
+        color: var(--main-text-color);
+        text-decoration: none;
+
+        &:visited {
+            color: var(--main-text-color);
+            text-decoration: none;
+        }
+
+        &:active {
+            color: var(--main-hover-color);
+
+            & svg {
+                fill: var(--main-hover-color);
+            }
+        }
+    }
+
+    .behanceSVG {
+        width: 25px;
+        height: 25px;
+        fill: var(--main-text-color);
+    }
+
+    .projects {
+        margin: 0 18px 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectYear {
+        font-size: 16px;
+    }
+
+    .fotolarek {
+        margin-bottom: 20px;
+        & .fotolarekHeaderWrapper {
+            display: flex;
+            justify-content: space-between;
+
+            & .fotolarekProjectHeader {
+                font-size: 24px;
+                display: flex;
+
+                & a {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+        }
+
+        & .fotolarekDescription {
+            margin: 8px 18px 10px 0;
+
+            & span {
+                display: inline-block;
+                width: 230px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .fotolarekImg {
+        display: none;
+    }
+
+    .mobileAppsProjects {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: -40px;
+    }
+
+    .capturedCulture {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -70px;
+    }
+
+    .ccHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .capturedCultureHeader {
+        margin-right: 27px;
+    }
+
+    .ccYearPC {
+        display: none;
+    }
+
+    .ccYearMobile {
+        display: inline-block;
+        width: 20px;
+    }
+
+    .capturedCultureHeader {
+        font-size: 24px;
+        display: flex;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .ccDescription {
+        width: 260px;
+    }
+
+    .ccIMGcontainer {
+        display: flex;
+        transform: scale(0.55);
+        margin-left: -135px;
+        margin-top: -50px;
+        gap: 5px;
+    }
+
+    .bcHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .bcHeader {
+        font-size: 24px;
+        gap: 10px;
+        margin-right: 113px;
+    }
+
+    .desktopBr {
+        display: none;
+    }
+
+    .bcDescription {
+        margin-bottom: 19px;
+    }
+
+    .bcIMGcontainer {
+        display: flex;
+        transform: scale(0.55);
+        margin-left: -95px;
+        margin-top: -75px;
+        gap: 5px;
+    }
+
+    .nnccProjectAndFincherBook {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nnccHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .nnccHeader {
+        display: flex;
+        font-size: 24px;
+        gap: 10px;
+        margin-right: 200px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .nnccDescription {
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 250px;
+    }
+
+    .nnccIMGcontainer {
+        position: relative;
+        margin-bottom: -90px;
+    }
+
+    .black_t-shirt {
+        transform: scale(0.55);
+        margin-left: -100px;
+        margin-top: -75px;
+    }
+
+    .white_t-shirt {
+        transform: scale(0.55);
+        position: absolute;
+        z-index: -1;
+        top: -75px;
+        left: 0px;
+    }
+
+    #nncc_woman {
+        position: absolute;
+        width: 171px;
+        height: 180px;
+        z-index: -2;
+        left: 70px;
+        top: -20px;
+    }
+
+    .fincherBookHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .fincherBookHeader {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        gap: 10px;
+        margin-right: 38px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .fincherBookDescription {
+        margin-bottom: 20px;
+    }
+
+    .fincherBookIMGcontainer {
+        position: relative;
+        margin-bottom: -80px;
+    }
+
+    .fincher_first {
+        transform: scale(0.5);
+        margin-left: -130px;
+        margin-top: -80px;
+    }
+
+    .fincher_second {
+        transform: scale(0.5);
+        position: absolute;
+        z-index: -1;
+        top: -100px;
+        left: -60px;
+    }
+
+    .doomscrolling_cintetica {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .doomscrollingHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .doomscrollingHeader {
+        display: flex;
+        font-size: 24px;
+        gap: 10px;
+        margin-right: 60px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .doomscrollingDescription {
+        margin-bottom: 30px;
+    }
+
+    .doomscrollingIMGcontainer {
+        transform: scale(0.6);
+        margin-left: -70px;
+        margin-top: -55px;
+        margin-bottom: -45px;
+    }
+
+    .cinteticaHeaderWrapper {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .cinteticaHeader {
+        display: flex;
+        font-size: 24px;
+        gap: 10px;
+        margin-right: 148px;
+
+        & a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .cinteticaDescription {
+        display: inline-block;
+        width: 270px;
+    }
+
+    .cinteticaIMGcontainer {
+        transform: scale(0.6);
+        margin-left: -70px;
+        margin-top: -35px;
+    }
+
+    .feedback {
+        margin: 0 18px 60px 16px;
+
+        & span {
+            display: inline-block;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 26px;
+        }
+    }
+
+    .feedback-form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formNameWrapper {
+        position: relative;
+    }
+
+    #name {
+        border:none;
+        border-bottom: 1px solid black;
+        padding: 10px 20px 20px 0px;
+        width: 342px;
+        height: 27px;
+    }
+
+    .formContactsWrapper {
+        position: relative;
+    }
+
+    #contactsInput {
+        border:none;
+        border-bottom: 1px solid black;
+        padding: 10px 20px 20px 0px;
+        width: 342px;
+        height: 27px;
+    }
+
+    .textareaBtnWrapper {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .formTextareaWrapper {
+        position: relative;
+    }
+
+    #message {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 342px;
+        height: 27px;
+        resize: none;
+        scrollbar-width: none;
+        font-family: 'HelveticaNeueCyr';
+    }
+
+    .inputHeader {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #name:focus {
+        outline: none;
+    }
+
+    #contactsInput:focus {
+        outline: none;
+    }
+
+    #message:focus {
+        outline: none;
+    }
+
+    #submit-btn {
+        width: 70px;
+        height: 33px;
+        background: transparent;
+        border-radius: 34px;
+        border: 1px solid #000;
+
+        &:active {
+            color: white;
+            background-color: black;
+            border: none;
+        }
+    }
+
+    .contacts_mobile_wrapper {
+        display: flex;
+        margin: 100px 18px 60px 16px;
+        gap: 55px;
+    }
+
+    .contacts_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        width: 143px;
+        gap: 20px;
+    }
+
+    .addLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .upButton {
+        & svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .mobileDateEdit {
+        color: #8F8F8F;
+    }
+
+    .desktopDate {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+.wrapper {
+    width: 100vw;
+}
+
+.mobile_text_wrapper {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+#navScrollLine {
+    position: sticky;
+    border: 1px solid #DADADA;
+    top: 62px;
+    z-index: 100;
+    width: 100vw;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 24px 38px 15px 40px;
+    font-size: 24px;
+    z-index: 50;
+    background: var(--main-bg-color);
+}
+
+
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -93,14 +681,16 @@ nav a {
     z-index: -1;
     transform: scale(0.95);
     margin-left: 5px;
-    & .white_mode {
-        position: absolute;
-    }
+   
+}
 
-    & .dark_mode {
-        position: absolute;
+.white_mode {
+    display: block;
+    position: absolute;
+}
 
-    }
+.dark_mode {
+    position: absolute;
 }
 
 #dark_mode_video {
@@ -126,42 +716,21 @@ img {
 }
 
 .projectsAndSwitcher {
-    display: flex;
     margin: 20px 40px 0 40px;
-    justify-content: space-between;
-    align-items: center;
 
     .projectsHeader {
-        font-weight: 700;
         font-size: 74px;
     }
 
     .switchContainer {
-        padding-bottom: 2px;
 
-        & input {
-            display: none;
-        }
-
-        & label {
-            display: inline-block;
-            position: relative;
-            transition: 300ms ease-in-out;
+        & label {     
             width: 80px;
             height: 46px;
-            outline: 2px solid black;
-            border-radius: 50px;
-            cursor: pointer;
 
             & div {
-                position: absolute;
                 width: 42px;
                 height: 42px;
-                top: 2px;
-                left: 2px;
-                background: #000;
-                border-radius: 50%;
-                transition: 300ms ease-in-out;
             }
         }
 
@@ -169,22 +738,25 @@ img {
 }
 
 .switch:checked + label {
-    background: #900000;
-    transition: 300ms ease-in-out;
-    outline: none;
 
     & div {
-        background: #fff;
         left: 35px;
     }
 }
 
 .behanceSVG {
+    width: 37px;
+    height: 37px;
     fill: var(--main-text-color);
     cursor: pointer;
 }
 
+.fotolarekImg_mobile {
+    display: none;
+}
+
 .fotolarekImg {
+    display: block;
     transform: scale(1);
     width: 1300px;
     height: 400px;
@@ -196,20 +768,11 @@ img {
     flex-direction: column;
 
     & .fotolarek {
+        margin-bottom: 80px;
         & .fotolarekHeaderWrapper {
-            display: flex;
-            justify-content: space-between;
-
             & .fotolarekProjectHeader {
                 font-size: 44px;
-                display: flex;
                 gap: 10px;
-
-                & a {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                }
             }
 
         }
@@ -218,45 +781,42 @@ img {
             margin: 10px 0 30px 0;
 
             & span {
-                display: inline-block;
-                width: 300px;
+                width: 320px;
                 font-size: 24px;
             }
         }
     }
 
     & .mobileAppsProjects {
-        margin: 80px 0 80px 0;
-        display: flex;
+        margin: 0 0 80px 0;
+        flex-direction: row;
         gap: 61px;
         & .capturedCulture {
-
+            flex-wrap: nowrap;
+            flex-direction: column;
+            margin-bottom: 0;
             & .ccHeaderWrapper {
-                display: flex;
-                margin-bottom: 10px;
+                & .ccYearMobile {
+                    display: none;
+                }
 
                 & .capturedCultureHeader {
-                    display: flex;
                     font-size: 44px;
                     gap: 10px;
                     margin-right: 38px;
-
-                    & a {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                    }
                 }
             }
 
             & .ccDescription {
+                width: 450px;
                 font-size: 24px;
                 margin-bottom: 30px;
             }
 
             & .ccIMGcontainer {
-                display: flex;
+                transform: scale(1);
                 gap: 10px;
+                margin: auto;
             }
         }
 
@@ -279,72 +839,53 @@ img {
             }
 
             & .bcIMGcontainer {
-                display: flex;
-                gap: 5px;
+                transform: scale(1);
+                margin: auto;
             }
         }
     }
 
     & .nnccProjectAndFincherBook {
-        display: flex;
+        flex-direction: row;
         gap: 61px;
-        margin-bottom: 80px;
+        margin-bottom: 140px;
 
         & .nncc {
+            
             & .nnccHeaderWrapper {
-                display: flex;
-                margin-bottom: 10px;
 
                 & .nnccHeader {
-                    display: flex;
                     font-size: 44px;
-                    gap: 10px;
                     margin-right: 389px;
-
-                    & a {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-                    }
                 }
-
-                
             }
 
             & .nnccDescription {
                 font-size: 24px;
                 margin-bottom: 50px;
-            }
-
-            & .nnccIMGcontainer {
-                position: relative;
-
-                & #nncc_woman {
-                    position: absolute;
-                    width: 305.883px;
-                    height: 321.778px;
-                    z-index: -2;
-                    top: -51px;
-                    left: 121px;
-                }
-
-                & .white_t-shirt {
-                    position: absolute;
-                    z-index: -1;
-                    left: 191px;
-                }
-            }
-        }
-
-        & .fincherBook {
-
-            & .fincherBookHeaderWrapper {
-                display: flex;
-                margin-bottom: 10px;
-
+                display: inline;
             }
         }
     }
+}
+
+#nncc_woman {
+    width: 305.883px;
+    height: 321.778px;
+    top: -51px;
+    left: 121px;
+}
+
+.white_t-shirt {
+    transform: scale(1);
+    top: 0;
+    left: 191px;
+}
+
+.black_t-shirt {
+    margin-top: 0;
+    margin-left: 0;
+    transform: scale(1);
 }
 
 .bcHeader {
@@ -354,18 +895,13 @@ img {
     margin-right: 200px;
 }
 
-.fincherBookHeader {
-    display: flex;
-    justify-content: center;
-    font-size: 44px;
-    gap: 10px;
-    margin-right: 120px;
+.desktopBr {
+    display: inline;
+}
 
-    & a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
+.fincherBookHeader {
+    font-size: 44px;
+    margin-right: 120px;
 }
 
 .fincherBookDescription {
@@ -374,25 +910,21 @@ img {
 }
 
 .fincherBookIMGcontainer {
-    position: relative;
     margin-left: -20px;
+
+    & .fincher_first {
+        transform: scale(1);
+        margin: auto;
+    }
+
     & .fincher_second {
-        position: absolute;
-        z-index: -1;
+        transform: scale(1);
         left: 143px;
         top: -39px;
     }
 }
 
 a {
-    color: var(--main-text-color);
-    text-decoration: none;
-
-    &:visited {
-        color: var(--main-text-color);
-        text-decoration: none;
-    }
-
     &:hover {
         color: var(--main-hover-color);
 
@@ -407,27 +939,14 @@ a {
 }
 
 .doomscrolling_cintetica {
-    display: flex;
+    flex-direction: row;
     gap: 61px;
     margin-bottom: 10px;
 }
 
-.doomscrollingHeaderWrapper {
-    display: flex;
-    margin-bottom: 10px;
-}
-
 .doomscrollingHeader {
-    display: flex;
     font-size: 44px;
-    gap: 10px;
     margin-right: 131px;
-
-    & a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
 }
 
 .doomscrollingDescription {
@@ -436,25 +955,14 @@ a {
 }
 
 .doomscrollingIMGcontainer {
+    transform: scale(1);
     margin-left: 35px;
-}
-
-.cinteticaHeaderWrapper {
-    display: flex;
-    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .cinteticaHeader {
-    display: flex;
     font-size: 44px;
-    gap: 10px;
     margin-right: 270px;
-
-    & a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
 }
 
 .cinteticaDescription {
@@ -463,7 +971,9 @@ a {
 }
 
 .cinteticaIMGcontainer {
+    transform: scale(1);
     margin-left: 70px;
+    margin-top: 0;
 }
 
 #feedback {
@@ -484,15 +994,17 @@ a {
     & .feedback-form {
         font-size: 24px;
         display: flex;
-        flex-direction: column;
-        gap: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
 
-        & #nameContactsWrapper {
+        /* & #nameContactsWrapper {
             display: flex;
             gap: 20px;
-        }
+        } */
         & .formNameWrapper {
             position: relative;
+            margin-bottom: 50px;
             & .inputHeader {
                 display: block;
                 margin-bottom: 10px;
@@ -508,8 +1020,6 @@ a {
             } */
 
             & #name {
-                border: none;
-                border-bottom: 2px solid #000;
                 width: 670px;
                 padding: 15px 0 10px 0;
                 font-size: 24px;
@@ -533,8 +1043,6 @@ a {
             } */
 
             & #contactsInput {
-                border: none;
-                border-bottom: 2px solid #000;
                 width: 670px;
                 padding: 15px 0 10px 0;
                 font-size: 24px;
@@ -542,14 +1050,11 @@ a {
         }
 
         & .textareaBtnWrapper {
-            display: flex;
             gap: 60px;
-            flex-direction: column;
             & .formTextareaWrapper {
-                position: relative;
                 & .inputHeader {
                     display: block;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                 }
 
                 /* & .placeholder {
@@ -562,15 +1067,10 @@ a {
                 } */
 
                 & #message {
-                    border: none;
-                    border-bottom: 2px solid #000;
                     width: 670px;
-                    height: 26px;
+                    height: 50px;
                     padding: 15px 0 10px 0;
                     font-size: 24px;
-                    resize: none;
-                    scrollbar-width: none;
-                    font-family: 'HelveticaNeueCyr';
                 }
             }
 
@@ -578,8 +1078,6 @@ a {
                 width: 105px;
                 height: 49px;
                 font-size: 24px;
-                background: transparent;
-                border-radius: 50px;
                 cursor: pointer;
                 border: 2px solid black;
 
@@ -588,27 +1086,13 @@ a {
                     background-color: var(--main-hover-color);
                     border: none;
                 }
-
-                &:active {
-                    color: white;
-                    background-color: #000;
-                    border: none;
-                }
             }
         }
-
-
     }
 }
 
-
-
 #message::-webkit-scrollbar {
     display: none;
-}
-
-#name:focus {
-    outline: none;
 }
 
 /* #name:focus + label{
@@ -619,26 +1103,27 @@ a {
     display: block;
 } */
 
-#contactsInput:focus {
-    outline: none;
-}
-
 /* #contactsInput:focus + label {
     display: none;
 } */
-
-#message:focus {
-    outline: none;
-}
 
 /* #message:focus + label {
     display: none;
 } */
 
 .welcome_video {
+    display: block;
     width: 816px;
     height: 216px;
     margin: 0 auto 230px auto;
+}
+
+.contacts_mobile_wrapper {
+    display: none;
+}
+
+.desktopDate {
+    display: inline;
 }
 
 .contactsWrapper {
@@ -682,6 +1167,7 @@ a {
     }
 
     .fotolarekImg {
+        
         width: 1360px;
         height: 425px;
     }
