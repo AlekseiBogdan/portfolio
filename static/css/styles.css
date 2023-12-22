@@ -17,14 +17,15 @@
     --darkmode-hover-color: #CA0000;
 }
 
+@media screen and (min-width: 1366px) {
+
 body {
     font-family: HelveticaNeueCyr;
     overflow-x: hidden;
     position: relative;
 }
 
-@media screen and (min-width: 1440px) {
-    #navScrollLine {
+#navScrollLine {
     position: sticky;
     border: 1px solid #DADADA;
     top: 62px;
@@ -35,7 +36,7 @@ body {
 }
 
 .wrapper {
-    width: 1440px;
+    width: 100%;
     margin: auto;
     position: relative;
 }
@@ -90,6 +91,7 @@ nav a {
     position: absolute;
     top: 0;
     z-index: -1;
+    transform: scale(0.95);
     margin-left: 5px;
     & .white_mode {
         position: absolute;
@@ -117,6 +119,10 @@ nav a {
     justify-content: space-between;
     margin: 900px 40px 0 40px;
     font-size: 24px;
+}
+
+img {
+    transform: scale(0.85);
 }
 
 .projectsAndSwitcher {
@@ -182,9 +188,10 @@ nav a {
     }
 }
 
-.projectsHeaders:hover {
-    color: #900000;
-    cursor: pointer;
+.fotolarekImg {
+    transform: scale(1);
+    width: 1300px;
+    height: 400px;
 }
 
 .projects {
@@ -217,9 +224,6 @@ nav a {
                 }
             }
 
-            & .projectYear {
-                font-size: 24px;
-            }
         }
 
         & .fotolarekDescription {
@@ -230,11 +234,6 @@ nav a {
                 width: 300px;
                 font-size: 24px;
             }
-        }
-
-        & .fotolarekImg {
-            width: 1360px;
-            height: 425px;
         }
     }
 
@@ -254,10 +253,6 @@ nav a {
                     gap: 10px;
                     margin-right: 38px;
                 }
-
-                & .projectYear {
-                    font-size: 24px;
-                }
             }
 
             & .ccDescription {
@@ -268,10 +263,6 @@ nav a {
             & .ccIMGcontainer {
                 display: flex;
                 gap: 10px;
-
-                & .bigimg {
-                    display: none;
-                }
             }
         }
 
@@ -280,17 +271,6 @@ nav a {
             & .bcHeaderWrapper {
                 display: flex;
                 margin-bottom: 10px;
-
-                & .bcHeader {
-                    display: flex;
-                    font-size: 44px;
-                    gap: 10px;
-                    margin-right: 274px;
-                }
-
-                & .projectYear {
-                    font-size: 24px;
-                }
             }
 
             & .bcDescription {
@@ -300,11 +280,7 @@ nav a {
 
             & .bcIMGcontainer {
                 display: flex;
-                gap: 10px;
-
-                & .bigimg {
-                    display: none;
-                }
+                gap: 5px;
             }
         }
     }
@@ -312,6 +288,7 @@ nav a {
     & .nnccProjectAndFincherBook {
         display: flex;
         gap: 61px;
+        margin-bottom: 80px;
 
         & .nncc {
             & .nnccHeaderWrapper {
@@ -325,9 +302,7 @@ nav a {
                     margin-right: 389px;
                 }
 
-                & .projectYear {
-                    font-size: 24px;
-                }
+                
             }
 
             & .nnccDescription {
@@ -337,10 +312,6 @@ nav a {
 
             & .nnccIMGcontainer {
                 position: relative;
-
-                & .bigimg {
-                    display: none;
-                }
 
                 & #nncc_woman {
                     position: absolute;
@@ -354,7 +325,7 @@ nav a {
                 & .white_t-shirt {
                     position: absolute;
                     z-index: -1;
-                    left: 211px;
+                    left: 191px;
                 }
             }
         }
@@ -365,19 +336,23 @@ nav a {
                 display: flex;
                 margin-bottom: 10px;
 
-                & .fincherBookHeader {
-                    display: flex;
-                    font-size: 44px;
-                    gap: 10px;
-                    margin-right: 142px;
-                }
-
-                & .projectYear {
-                    font-size: 24px;
-                }
             }
         }
     }
+}
+
+.bcHeader {
+    display: flex;
+    font-size: 44px;
+    gap: 10px;
+    margin-right: 200px;
+}
+
+.fincherBookHeader {
+    display: flex;
+    font-size: 44px;
+    gap: 10px;
+    margin-right: 120px;
 }
 
 .fincherBookDescription {
@@ -387,7 +362,7 @@ nav a {
 
 .fincherBookIMGcontainer {
     position: relative;
-
+    margin-left: -20px;
     & .fincher_second {
         position: absolute;
         z-index: -1;
@@ -396,13 +371,66 @@ nav a {
     }
 }
 
+.projectYear {
+    font-size: 24px;
+}
+
+.doomscrolling_cintetica {
+    display: flex;
+    gap: 61px;
+    margin-bottom: 10px;
+}
+
+.doomscrollingHeaderWrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.doomscrollingHeader {
+    display: flex;
+    font-size: 44px;
+    gap: 10px;
+    margin-right: 131px;
+}
+
+.doomscrollingDescription {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.doomscrollingIMGcontainer {
+    margin-left: 16px;
+}
+
+.cinteticaHeaderWrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cinteticaHeader {
+    display: flex;
+    font-size: 44px;
+    gap: 10px;
+    margin-right: 350px;
+}
+
+.cinteticaDescription {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cinteticaIMGcontainer {
+    margin-left: 51px;
+}
+
 #feedback {
     height: 1px;
     margin-bottom: 59px;
 }
 
 .feedback {
-    margin: 0 40px 10px 40px;
+    transform: scale(0.95);
+    margin: 0 40px 10px 15px;
     & span {
         display: inline-block;
         font-size: 74px;
@@ -590,4 +618,49 @@ nav a {
         }
     }
 }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .wrapper {
+        width: 1440px;
+    }
+
+    img {
+        transform: scale(1);
+    }
+
+    .lead_video {
+        transform: scale(1);
+    }
+
+    .fotolarekImg {
+        width: 1360px;
+        height: 425px;
+    }
+
+    .bcHeader {
+        margin-right: 274px;
+    }
+
+    .fincherBookHeader {
+        margin-right: 142px;
+    }
+
+    .fincherBookHeader {
+        margin-right: 142px;
+    }
+
+    .fincherBookIMGcontainer {
+        margin-left: 0;
+    }
+
+    .feedback {
+        transform: scale(1);
+        margin: 0 40px 10px 40px;
+    }
+
+    .bcIMGcontainer {
+        gap: 10px;
+    }
 }
