@@ -14,6 +14,10 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="index.html">KARINA</a>
+                <div id="mobile_nav" class="mobile_nav">
+                    <a class="active" href="info.html">INFO</a>
+                    <a id="info_cv" href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
+                </div>
                 <div class="nav-links-wrapper">
                     <a class="active" href="info.html">INFO</a>
                     <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
@@ -23,26 +27,33 @@
         </nav>
         <span class="infoHeader">I'M KARINA. I AM A MULTI-TOOL<br>DESIGNER WHO IS READY FOR<br>TASKS OF DIFFERENT COMPLEXITY.</span>
         <div class="infoIMGcontainer">
+            <img src="static/images/karina_info.png" alt="">
             <img src="static/images/first_karina.png" alt="">
             <img src="static/images/second_karina.png" alt="">
             <img src="static/images/third-karina.png" alt="">
             <img src="static/images/last-karina.png" alt="">
         </div>
-        <span class="infoSubHeader">WHAT ABOUT MY SKILLS</span>
+        <span class="infoSubHeader"><span id="desktopPhrase">WHAT</span> ABOUT MY SKILLS</span>
         <div class="skillsContainer">
             <div class="skillsFirstRow">
-                <span>FIGMA</span>
-                <span>ADOBE KIT (PS, AI, ID, AE)</span>
-                <span>READYMAG</span>
-                <span>AI-TOOLS</span>
-                <span>NOTION</span>
+                <div>
+                    <span>FIGMA</span>
+                    <span>ADOBE KIT (PS, AI, ID)</span>
+                    <span>READYMAG</span>
+                    <span>AI-TOOLS</span>
+                    <span>NOTION</span>
+                </div>
+                <span class="mobileSkills">tools</span>
             </div>
             <div class="skillsSecondRow">
-                <span>UX RESEARCH</span>
-                <span>PROTOTYPING</span>
-                <span>WIREFRAMING</span>
-                <span>USABILITY TESTING</span>
-                <span>USER ANALYSIS</span>
+                <div>
+                    <span>UX RESEARCH</span>
+                    <span>PROTOTYPING</span>
+                    <span>WIREFRAMING</span>
+                    <span>USABILITY TESTING</span>
+                    <span>USER ANALYSIS</span>
+                </div>
+                <span class="mobileSkills">skills</span>
             </div>
         </div>
         <div class="workAndEducation">
@@ -70,22 +81,40 @@
                         <span class="educationExpSubHeader">HSE UNIVERSITY</span>
                         <span class="length">2020-2024</span>
                     </div>
-                    <span class="hseDescription">Bachelor. Fundamental and Applied Linguistics</span>
+                    <span class="hseDescription">Bachelor.<br class="mobileBr">Fundamental&Applied Linguistics</span>
                 </div>
                 <div class="additionalEducation">
                     <div class="addEduWrapper">
-                        <span class="addExpSubHeader">HSE ART AND DESIGN</span>
+                        <span class="addExpSubHeader">HSE ART&DESIGN</span>
                         <span class="length">2022-2023</span>
                     </div>
-                    <span class="addEduDescription">Additional education. Сommunication and digital design</span>
+                    <span class="addEduDescription">Additional education.<br class="mobileBr"> Сommunication&digital design</span>
                 </div>
             </div>
         </div>
         <div class="infoContacts">
             <a href='https://t.me/hahaareu' class="TG">TELEGRAM</a>
             <a href="mailto: idkeepunderk@mail.com"target="_blank" class="mail">MAIL</a>
-            <span class="date">LAST EDIT: 10.2023</span>
+            <span class="date">LAST EDIT: 12.2023</span>
         </div>
+        <div class="contacts_mobile_wrapper">
+                <div class="contacts_mobile">
+                    <a href="https://t.me/hahaareu" target="_blank">TG</a>
+                    <a href="https://instagram.com/karimorish?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">INST</a>
+                    <a href="mailto: idkeepunderk@mail.com">MAIL</a>
+                    <span class="mobileDateEdit">LAST EDIT: 12.2023</span>
+                </div>
+                <div class="addLinks">
+                    <a href="info.html">INFO</a>
+                    <a href="static/Karina_Zakirova_CV.pdf" download>CV&darr;</a>
+                </div>
+                <div class="upButton">
+                    <a href="#navScrollLine"><svg class="behanceSVG" width="37" height="37" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35ZM16.672 29.4363C16.9215 29.6857 17.2598 29.8258 17.6125 29.8258C17.9652 29.8258 18.3035 29.6857 18.5529 29.4363C18.8024 29.1868 18.9425 28.8486 18.9425 28.4958V9.63109L25.9649 17.0046C26.0845 17.1365 26.2293 17.2429 26.3908 17.3178C26.5523 17.3926 26.7272 17.4343 26.9051 17.4403C27.083 17.4463 27.2603 17.4165 27.4265 17.3528C27.5926 17.289 27.7443 17.1925 27.8725 17.0691C28.0008 16.9456 28.1029 16.7977 28.1729 16.634C28.2429 16.4703 28.2793 16.2943 28.28 16.1163C28.2807 15.9383 28.2457 15.762 28.177 15.5978C28.1083 15.4336 28.0073 15.2848 27.8801 15.1603L18.5701 5.40701C18.446 5.27829 18.2973 5.17591 18.1328 5.10598C17.9682 5.03604 17.7913 5 17.6125 5C17.4337 5 17.2568 5.03604 17.0922 5.10598C16.9277 5.17591 16.779 5.27829 16.6549 5.40701L7.3449 15.1603C7.11252 15.4165 6.98908 15.7532 7.00076 16.0988C7.01244 16.4445 7.15832 16.772 7.40746 17.0119C7.6566 17.2519 7.98939 17.3853 8.33526 17.3839C8.68113 17.3825 9.01286 17.2465 9.2601 17.0046L16.2825 9.63109V28.4958C16.2825 28.8486 16.4226 29.1868 16.672 29.4363Z" />
+                        </svg>
+                        </a>
+                </div>
+            </div>
     </div>
 </body>
 </html>

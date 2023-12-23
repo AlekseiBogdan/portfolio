@@ -54,7 +54,7 @@ nav a {
     }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (hover:none) {
     .white_mode, .dark_mode {
         display: none;
     }
@@ -124,7 +124,7 @@ nav a {
 
     .projectsAndSwitcher {
         display: flex;
-        margin: 0 18px 16px 16px;
+        margin: 0 18px 26px 16px;
         justify-content: space-between;
         align-items: center;
     
@@ -344,7 +344,7 @@ nav a {
     .nnccHeader {
         display: flex;
         font-size: 24px;
-        gap: 10px;
+        gap: 5px;
         margin-right: 200px;
 
         & a {
@@ -397,7 +397,7 @@ nav a {
         display: flex;
         justify-content: center;
         font-size: 24px;
-        gap: 10px;
+        gap: 5px;
         margin-right: 38px;
 
         & a {
@@ -444,7 +444,7 @@ nav a {
     .doomscrollingHeader {
         display: flex;
         font-size: 24px;
-        gap: 10px;
+        gap: 5px;
         margin-right: 60px;
 
         & a {
@@ -1021,7 +1021,7 @@ a {
 
             & #name {
                 width: 670px;
-                padding: 15px 0 10px 0;
+                padding: 20px 0 20px 0;
                 font-size: 24px;
             }
         }
@@ -1044,7 +1044,7 @@ a {
 
             & #contactsInput {
                 width: 670px;
-                padding: 15px 0 10px 0;
+                padding: 20px 0 20px 0;
                 font-size: 24px;
             }
         }

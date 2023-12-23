@@ -1,64 +1,175 @@
-.fotolarekPage {
-    margin: 54px 40px 0 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-.fotolarekWrapper {
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 375px) {
+    .fotolarekPage {
+        margin: 0px 16px 10px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
-    & .projectYear {
+    .fotolarekWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .fotolarekHeaderSVG {
+        /* display: flex; */
         font-size: 24px;
+        /* gap: 10px; */
+    }
+
+    .fotolarekDescriptionPage {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    #fotolarekPageIMG {
+        display: block;
+    }
+
+    .fotolarekIMGcontainer {
+        margin: 0 16px 10px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+    #notebook {
+        display: none;
+    }
+
+    #brochure {
+        background-color: #000;
+    }
+
+    #envelope {
+        display: none;
+    }
+
+    #hands {
+        height: 140px;
+    }
+
+    .laptop_fotolarek {
+        width: 337px;
+        height: 190px;
+        margin: 0 auto 60px auto;
+        position: relative;
+
+        & #laptop {
+            width: 337px;
+            height: 190px;
+        }
+
+        & #shadow {
+            width: 337px;
+            height: 190px;
+        }
+
+        & img {
+            position: absolute;
+        }
+
+        & #screen {
+            width: 258px;
+            height: 166px;
+            top: 5px;
+            left: 39px;
+        }
+    }
+
+    #fotolarekEdit {
+        display: none;
     }
 }
 
-.fotolarekHeaderSVG {
-    display: flex;
-    font-size: 44px;
-    gap: 10px;
-}
+@media screen and (min-width: 1366px) {
+    .fotolarekPage {
+        margin: 54px 40px 0 40px;
+    }
 
-.fotolarekDescriptionPage {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+    .fotolarekWrapper {
+        & .projectYear {
+            font-size: 24px;
+        }
+    }
 
-.fotolarekIMGcontainer {
-    margin: 20px 0 100px 40px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    position: relative;
-}
+    .fotolarekHeaderSVG {
+        /* display: flex; */
+        font-size: 44px;
+        /* gap: 10px; */
+    }
 
-#brochure {
-    width: 1360px;
-    background-color: #000;
-}
+    .fotolarekDescriptionPage {
+        font-size: 24px;
+        margin-bottom: 20px;
+        width: 500px;
+    }
 
-#envelope {
-    position: absolute;
-    top: 1900px;
-    left: 690px;
-}
+    .mobileBr {
+        display: none;
+    }
 
-.laptop_fotolarek {
-    width: 1120px;
-    height: 629px;
-    margin: 0 auto 100px auto;
-    position: relative;
+    .fotolarekIMGcontainer {
+        margin: 20px 0 100px 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 
-    & img {
+    #notebook {
+        display: inline;
+    }
+
+    #hands {
+        height: 409px;
+    }
+    
+    #brochure {
+        width: 1360px;
+    }
+    
+    #envelope {
+        display: inline;
         position: absolute;
+        top: 1900px;
+        left: 690px;
+    }
+    
+    .laptop_fotolarek {
+        width: 1120px;
+        height: 629px;
+        margin: 0 auto 100px auto;
+        position: relative;
+
+        & #laptop {
+            width: 1120px;
+            height: 629px;
+        }
+
+        & #shadow {
+            width: 1120px;
+            height: 629px;
+        }
+    
+        & img {
+            position: absolute;
+        }
+    
+        & #screen {
+            width: 856px;
+            height: 550px;
+            top: 10px;
+            left: 130px;
+        }
     }
 
-    & #screen {
-        width: 856px;
-        top: 10px;
-        left: 130px;
+    #fotolarekEdit {
+        display: inline;
     }
 }
+
 
