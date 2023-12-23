@@ -21,11 +21,18 @@
     box-sizing: border-box;
 }
 
+input, textarea, button {
+    -webkit-appearance: none;
+}
+
 html {
     overflow-x: hidden;
 }
 
 body {
+    -webkit-text-size-adjust: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
     font-family: HelveticaNeueCyr;
     overflow-x: hidden;
     position: relative;
