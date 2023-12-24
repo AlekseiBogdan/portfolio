@@ -61,6 +61,16 @@ nav a {
 }
 
 @media screen and (min-width: 375px) {
+
+    #ccHeader {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & a {
+            height: 25px;
+        }
+    }
+
     .white_mode, .dark_mode {
         display: none;
     }
@@ -78,7 +88,7 @@ nav a {
     nav {
         width: 375px;
         margin: auto;
-        padding: 10px 10px 55px 16px;
+        padding: 30px 10px 55px 16px;
         font-size: 16px;
     }
 
@@ -266,7 +276,7 @@ nav a {
     .ccHeaderWrapper {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     .capturedCultureHeader {
@@ -679,6 +689,14 @@ nav a {
 }
 
 @media screen and (min-width: 1366px) {
+
+.mobileBackward {
+    display: none;
+}
+
+#ccHeader {
+    display: inline;
+}
 
 .wrapper {
     width: 100vw;

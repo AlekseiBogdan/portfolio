@@ -141,6 +141,12 @@
         margin-right: 70px;
     }
 
+    .additionalEducation {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
     .addExpSubHeader {
         font-size: 24px;
         display: inline-block;
@@ -159,6 +165,7 @@
         margin: 132px 0 20px 40px;
         font-size: 74px;
         font-weight: 700;
+        text-transform: uppercase;
     }
 
     .infoIMGcontainer {

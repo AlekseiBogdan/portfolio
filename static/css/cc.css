@@ -10,10 +10,13 @@
 
     .ccHeader {
         font-size: 24px;
+        display: flex;
+        align-items: center;
     }
 
-    .projectYear {
-        display: none;
+    .ccProjectYearDesktop {
+        display: inline-block;
+        width: 44px;
     }
 
     .ccDescriptionPage {
@@ -33,7 +36,7 @@
     .hand {
         position: absolute;
         bottom: 0;
-        width: 184px;
+        width: 165px;
         height: 140px;
     }
 
@@ -99,8 +102,8 @@
     .iphoneImage {
         margin-left: auto;
         margin-right: auto;
-        width: 211px;
-        height: 208px;
+        width: 189px;
+        height: 200px;
     }
 
     .iphoneHeader {
@@ -123,7 +126,7 @@
         width: 100%;
         background: linear-gradient(0deg, #FF6D1B 9.48%, rgba(255, 109, 27, 0.87) 26.96%, rgba(255, 109, 27, 0.83) 53.21%, rgba(255, 109, 27, 0.45) 66.59%, rgba(255, 109, 27, 0.22) 74.81%, rgba(255, 109, 27, 0.00) 87.33%, rgba(255, 109, 27, 0.00) 99.53%);
         position: absolute;
-        height: 820px;
+        height: 860px;
         top: 1508px;
         z-index: -2;
     }
@@ -131,7 +134,7 @@
     .ccAnatomy {
         position: relative;
         margin-bottom: 40px;
-        height: 590px;
+        height: 630px;
     }
 
     .ccAnatomyHeader {
@@ -607,14 +610,6 @@
     .ccHeader {
         font-size: 44px;
         line-height: 56px;
-    }
-
-    .projectYear {
-        display: inline;
-    }
-
-    .projectYearMobile {
-        display: none;
     }
 
     .ccDescriptionPage {

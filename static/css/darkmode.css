@@ -229,14 +229,32 @@
     display: none;
 }
 
-#keith {
+.beatWeekendPosters {
     width: 340px;
     height: 480px;
+
+    position: relative;
+
+    & img {
+        width: 340px;
+        height: 480px;
+        position: absolute;
+        left: 0;
+    }
 }
 
-#signal {
+.signalPosters {
     width: 340px;
     height: 480px;
+
+    position: relative;
+
+    & img {
+        width: 340px;
+        height: 480px;
+        position: absolute;
+        left: 0;
+    }
 }
 
 #glassLetters {
@@ -275,7 +293,6 @@
 }
 
 .darkmodeContacts {
-
     display: none;
     margin: auto 40px 60px 40px;
     justify-content: space-between;
@@ -316,14 +333,24 @@
         margin: 60px 0 0 40px;
     }
 
-    #keith {
+    .beatWeekendPosters {
         width: 670px;
         height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
     }
     
-    #signal {
+    .signalPosters {
         width: 670px;
         height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
     }
 
     #glassLetters {

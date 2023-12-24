@@ -35,6 +35,8 @@ let changeMode = (check, navLine) => {
     const contactsMobile = document.getElementsByClassName('contacts_mobile_wrapper')[0].getElementsByTagName('a');
     const svgContacts = document.getElementsByClassName('behanceSVG');
     const mobileNav = document.getElementsByClassName('mobile_nav')[0].getElementsByTagName('a');
+    const animatedPostersSignal = document.getElementsByClassName('animatedPostersSignal');
+    const animatedPostersBeat = document.getElementsByClassName('animatedBeatPosters');
 
     var timerId
 
@@ -78,6 +80,8 @@ let changeMode = (check, navLine) => {
             
 
             let i = 0;
+            let t = 0;
+            let b = 0;
             timerId = setInterval(() => {
                 if (i > 0) {
                     animatedMentalPosters[i-1].style.zIndex = '-1';
@@ -91,7 +95,32 @@ let changeMode = (check, navLine) => {
                     animatedMentalPosters[4].style.zIndex = '-1';
                     animatedCartoonPosters[4].style.zIndex = '-1';
                 }
+
+                if (t > 0) {
+                    animatedPostersSignal[t-1].style.zIndex = '-1';
+                }
+                animatedPostersSignal[t].style.zIndex = '1';
+                
+                if (t === 5) {
+                    t -= 6;
+                    animatedPostersSignal[5].style.zIndex = '-1';
+                }
+
+                if (b > 0) {
+                    animatedPostersBeat[b-1].style.zIndex = '-1';
+                }
+                console.log(animatedPostersBeat[b]);
+                console.log(b);
+                animatedPostersBeat[b].style.zIndex = '1';
+
+                if (b === 2) {
+                    b -= 3;
+                    animatedPostersBeat[2].style.zIndex = '-1';
+                }
+
                 ++i;
+                ++t;
+                ++b;
             }, 750);
         } else {
             document.body.style.background = 'var(--main-bg-color)';
