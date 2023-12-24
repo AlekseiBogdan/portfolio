@@ -146,21 +146,21 @@ let formProcessing = function(placeholder, name, contacts, textarea) {
     }
 
     function changeHeight() {
-        textarea.style.height = '26px';
-        textarea.style.height = textarea.scrollHeight - 28 + 'px';
+        textarea.style.height = '50px';
+        textarea.style.height = textarea.scrollHeight -28 + 'px';
     }
 
 }
 
-let resetForm = (button, placeholders) => {
-    button.addEventListener('click', () => reset())
+// let resetForm = (button, placeholders) => {
+//     button.addEventListener('click', () => reset())
 
-    function reset() {
-        for (let i of placeholders) {
-            i.style.display = 'block';
-        }
-    }
-}
+//     function reset() {
+//         for (let i of placeholders) {
+//             i.style.display = 'block';
+//         }
+//     }
+// }
 
 window.onload = function() {
     const navLine = document.getElementById('navScrollLine');
@@ -177,8 +177,8 @@ window.onload = function() {
         document.getElementById('contactsInput'),
         document.getElementById('message'),
     );
-    resetForm(
-        document.getElementById('submit-btn'),
-        document.getElementsByClassName('placeholder')
-    );
+    // resetForm(
+    //     document.getElementById('submit-btn'),
+    //     document.getElementsByClassName('placeholder')
+    // );
 }

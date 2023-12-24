@@ -49,6 +49,7 @@
         display: flex;
         gap: 50px;
         & div {
+            width: 300px;
             display: flex;
             flex-direction: column;
             font-size: 24px;
@@ -59,7 +60,7 @@
     .skillsSecondRow {
         margin: 0 18px 40px 16px;
         display: flex;
-        gap: 70px;
+        gap: 80px;
 
         & div {
             display: flex;
@@ -207,6 +208,7 @@
         flex-direction: column;
         margin: 0;
         & div {
+            width: 470px;
             gap: 20px;
             font-size: 44px;
             line-height: normal;

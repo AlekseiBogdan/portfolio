@@ -1,6 +1,7 @@
 @import url('darkmode.css');
 @import url('info.css');
 @import url('fotolarek.css');
+@import url('cc.css');
 @font-face {
     font-family: 'HelveticaNeueCyr';
     src: local('HelveticaNeueCyr'),
@@ -42,8 +43,6 @@ nav a {
     text-decoration: none;
     color: var(--main-text-color);
 
-
-
     &:visited {
         color: var(--main-text-color);
     }
@@ -79,7 +78,7 @@ nav a {
     nav {
         width: 375px;
         margin: auto;
-        padding: 10px 18px 55px 16px;
+        padding: 10px 10px 55px 16px;
         font-size: 16px;
     }
 
@@ -228,8 +227,9 @@ nav a {
                 display: flex;
 
                 & a {
-                    display: flex;
+                    display: inline-flex;
                     align-items: center;
+                    justify-content: center;
                     gap: 5px;
                 }
             }
@@ -260,11 +260,12 @@ nav a {
     .capturedCulture {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: -70px;
+        margin-bottom: -60px;
     }
 
     .ccHeaderWrapper {
         display: flex;
+        align-items: flex-start;
         margin-bottom: 10px;
     }
 
@@ -287,7 +288,9 @@ nav a {
 
         & a {
             display: flex;
+            
             align-items: center;
+            -webkit-align-items: center;
             gap: 5px;
         }
     }
@@ -398,10 +401,12 @@ nav a {
     .fincherBookHeaderWrapper {
         display: flex;
         margin-bottom: 10px;
+        position: relative;
     }
 
     .fincherBookHeader {
         display: flex;
+        z-index: 1000;
         justify-content: center;
         font-size: 24px;
         gap: 5px;
@@ -420,7 +425,7 @@ nav a {
 
     .fincherBookIMGcontainer {
         position: relative;
-        margin-bottom: -80px;
+        margin-bottom: -70px;
     }
 
     .fincher_first {
@@ -446,9 +451,11 @@ nav a {
     .doomscrollingHeaderWrapper {
         display: flex;
         margin-bottom: 10px;
+        position: relative;
     }
 
     .doomscrollingHeader {
+        z-index: 1000;
         display: flex;
         font-size: 24px;
         gap: 5px;
@@ -486,6 +493,7 @@ nav a {
         & a {
             display: flex;
             align-items: center;
+            -webkit-align-items:center;
             gap: 5px;
         }
     }
@@ -524,6 +532,7 @@ nav a {
 
     #name {
         border:none;
+        border-radius: 0px;;
         font-size: 16px;
         border-bottom: 1px solid black;
         padding: 10px 20px 20px 0px;
@@ -537,6 +546,7 @@ nav a {
 
     #contactsInput {
         border:none;
+        border-radius: 0px;
         font-size: 16px;
         border-bottom: 1px solid black;
         padding: 10px 20px 20px 0px;
@@ -556,6 +566,7 @@ nav a {
 
     #message {
         border: none;
+        border-radius: 0px;
         font-size: 16px;
         border-bottom: 1px solid black;
         width: 342px;
@@ -583,7 +594,9 @@ nav a {
     }
 
     #submit-btn {
-        width: 70px;
+        font-size: 16px;
+        text-align: center;
+        width: 65px;
         height: 33px;
         background: transparent;
         border-radius: 34px;
@@ -633,6 +646,35 @@ nav a {
 
     .contacts {
         display: none;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .mobile_text_wrapper {
+        width: 353px;
+        margin: 0 16px 46px 16px;
+    }
+
+    #mobile_text_image_first {
+        left: 280px;
+        top: 145px;
+    }
+
+    #mobile_text_image_second {
+        left: 280px;
+        top: 145px;
+    }
+
+    #message {
+        text-indent: -7px;
+    }
+
+    #message::placeholder {
+        transform: translateX(-0px);
+    }
+
+    #submit-btn {
+        padding: 0;
     }
 }
 
@@ -951,6 +993,7 @@ a {
 }
 
 .doomscrolling_cintetica {
+    position: relative;
     flex-direction: row;
     gap: 61px;
     margin-bottom: 10px;
@@ -1066,7 +1109,7 @@ a {
             & .formTextareaWrapper {
                 & .inputHeader {
                     display: block;
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                 }
 
                 /* & .placeholder {
