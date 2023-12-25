@@ -604,7 +604,12 @@
     }
 
     .ccWrapper {
-        margin: 54px 40px 20px 40px;
+        margin: 118px 40px 20px 40px;
+    }
+
+    .ccProjectYearDesktop {
+        width: 120px;
+        font-size: 24px;
     }
 
     .ccHeader {

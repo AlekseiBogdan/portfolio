@@ -711,7 +711,7 @@ nav a {
 }
 
 #navScrollLine {
-    position: sticky;
+    position: fixed;
     border: 1px solid #DADADA;
     top: 62px;
     z-index: 100;
@@ -722,7 +722,7 @@ nav a {
 
 nav {
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 24px 38px 15px 40px;
     font-size: 24px;
@@ -748,7 +748,7 @@ nav {
 
 .lead_video {
     position: absolute;
-    top: -30px;
+    top: -470px;
     z-index: -1;
     transform: scale(0.95);
     margin-left: 5px;
@@ -778,7 +778,7 @@ nav {
 .modeShowWrapper {
     display: flex;
     justify-content: space-between;
-    margin: 900px 40px 0 40px;
+    margin: 920px 40px 0 40px;
     font-size: 24px;
 }
 
@@ -1228,6 +1228,10 @@ a {
 @media screen and (min-width: 1440px) {
 
     .wrapper {
+        width: 1440px;
+    }
+
+    nav {
         width: 1440px;
     }
 
