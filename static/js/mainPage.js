@@ -110,6 +110,8 @@ let changeMode = (check, navLine) => {
                     animatedPostersBeat[b-1].style.zIndex = '-1';
                 }
 
+                animatedPostersBeat[b].style.zIndex = '1';
+
                 if (b === 2) {
                     b -= 3;
                     animatedPostersBeat[2].style.zIndex = '-1';
