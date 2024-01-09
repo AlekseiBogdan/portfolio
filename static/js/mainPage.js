@@ -109,9 +109,6 @@ let changeMode = (check, navLine) => {
                 if (b > 0) {
                     animatedPostersBeat[b-1].style.zIndex = '-1';
                 }
-                console.log(animatedPostersBeat[b]);
-                console.log(b);
-                animatedPostersBeat[b].style.zIndex = '1';
 
                 if (b === 2) {
                     b -= 3;
