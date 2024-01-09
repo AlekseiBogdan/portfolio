@@ -44,7 +44,7 @@ let changeMode = (check, navLine) => {
 
         if (check.checked == true) {
             document.body.style.background = 'var(--darkmode-bg-color)';
-            if (window.screen.availWidth > 1365 && window.devicePixelRatio < 1.25) {
+            if (window.screen.availWidth > 1365) {
                 video_light[0].style.display = 'none';
                 video_dark[0].style.display = 'block';
                 contactsWhite[0].style.display = 'none';
@@ -123,7 +123,7 @@ let changeMode = (check, navLine) => {
             }, 750);
         } else {
             document.body.style.background = 'var(--main-bg-color)';
-            if (window.screen.availWidth > 1365 && window.devicePixelRatio < 1.25) {
+            if (window.screen.availWidth > 1365) {
                 video_light[0].style.display = 'block';
                 video_dark[0].style.display = 'none';
                 contactsWhite[0].style.display = 'flex';
