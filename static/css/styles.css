@@ -465,7 +465,7 @@ nav a {
     }
 
     .doomscrollingHeader {
-        z-index: 1000;
+        z-index: 10;
         display: flex;
         font-size: 24px;
         gap: 5px;
