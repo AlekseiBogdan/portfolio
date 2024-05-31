@@ -1179,3 +1179,20 @@
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    #navCC {
+        position: fixed;
+        left: 0;
+        width: 100vw;   
+    }
+
+    #wrapperNavCC {
+        width: 1368px;
+        margin: auto;
+
+        & a {
+            margin-right: 0;
+        }
+    }
+}

@@ -7,6 +7,10 @@
         gap: 10px;
     }
 
+    .fotolarekImgPres {
+        transform: scale(1);
+    }
+
     .fotolarekWrapper {
         display: flex;
         justify-content: space-between;
@@ -87,7 +91,7 @@
 
 @media screen and (min-width: 1366px) {
     .fotolarekPage {
-        margin: 54px 40px 0 40px;
+        margin: 80px 40px 0 40px;
     }
 
     .fotolarekWrapper {
@@ -111,30 +115,39 @@
     .fotolarekIMGcontainer {
         margin: 20px 0 100px 40px;
         flex-direction: row;
-        align-items: center;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 20px;
         flex-wrap: wrap;
     }
 
-    #notebook {
-        display: inline;
+    .fotolarekBox {
+        width: 600px;
+        height: 400px;
     }
 
-    #hands {
-        height: 409px;
-    }
-    
     #brochure {
         width: 1360px;
     }
-    
-    #envelope {
-        display: inline;
-        position: absolute;
-        top: 1900px;
-        left: 690px;
+
+    #notebook {
+        display: inline-block;
+        height: 390px;
+        width: 300px;
     }
-    
+
+    #hands {
+        height: 400px;
+        width: 989px;
+    }
+
+    #envelope {
+        display: inline-block;
+        width: 600px;
+        height: 450px;
+    }
+
     .laptop_fotolarek {
         width: 1120px;
         height: 629px;
@@ -162,9 +175,35 @@
             left: 130px;
         }
     }
-
+    
     #fotolarekEdit {
         display: inline;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #notebook {
+        width: 325px;
+        height: 429px;
+    }
+
+    #hands {
+        height: 409px;
+        width: 1011px;
+    }
+
+    #envelope {
+        display: inline;
+        position: absolute;
+        top: 1900px;
+        left: 690px;
+        width: 747px;
+        height: 561px;
+    }
+
+    .fotolarekBox {
+        width: 670px;
+        height: 445px;
     }
 }
 
