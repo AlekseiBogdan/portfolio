@@ -215,7 +215,7 @@
         flex-direction: column;
         margin: 0;
         & div {
-            width: 470px;
+            width: 500px;
             gap: 20px;
             font-size: 44px;
             line-height: normal;
@@ -379,5 +379,19 @@
         font-size: 24px;
     }
     
+}
+
+@media screen and (min-width: 1440px) {
+    .skillsFirstRow {
+        flex-direction: column;
+        margin: 0;
+        & div {
+            width: 520px;
+            gap: 20px;
+            font-size: 44px;
+            line-height: normal;
+        }
+        
+    }
 }
 

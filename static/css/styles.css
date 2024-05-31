@@ -887,7 +887,7 @@ img {
 
             & .ccIMGcontainer {
                 transform: scale(1);
-                gap: 10px;
+                gap: 0px;
                 margin: auto;
             }
         }
@@ -912,6 +912,7 @@ img {
 
             & .bcIMGcontainer {
                 transform: scale(1);
+                gap: 0;
                 margin: auto;
             }
         }
@@ -1082,18 +1083,8 @@ a {
                 display: block;
                 margin-bottom: 10px;
             }
-
-            /* & .placeholder {
-                position: absolute;
-                user-select: none;
-                cursor: text;
-                top: 48px;
-                left: 0px;
-                color: #8F8F8F;
-            } */
-
             & #name {
-                width: 670px;
+                width: 570px;
                 padding: 20px 0 20px 0;
                 font-size: 24px;
             }
@@ -1106,17 +1097,10 @@ a {
                 margin-bottom: 10px;
             }
 
-            /* & .placeholder {
-                position: absolute;
-                user-select: none;
-                cursor: text;
-                top: 48px;
-                left: 0px;
-                color: #8F8F8F;
-            } */
+
 
             & #contactsInput {
-                width: 670px;
+                width: 570px;
                 padding: 20px 0 20px 0;
                 font-size: 24px;
             }
@@ -1130,17 +1114,9 @@ a {
                     margin-bottom: 10px;
                 }
 
-                /* & .placeholder {
-                    position: absolute;
-                    user-select: none;
-                    cursor: text;
-                    top: 48px;
-                    left: 0;
-                    color: #8F8F8F;
-                } */
 
                 & #message {
-                    width: 670px;
+                    width: 570px;
                     height: 50px;
                     padding: 15px 0 10px 0;
                     font-size: 24px;
@@ -1239,6 +1215,21 @@ a {
         transform: scale(1);
     }
 
+    .projects {
+        
+       
+    
+        & .mobileAppsProjects {
+           
+            & .capturedCulture {
+    
+                & .ccIMGcontainer {
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
     .lead_video {
         transform: scale(1);
     }
@@ -1278,4 +1269,77 @@ a {
         margin-right: 350px;
     }
     
+    & .feedback-form {
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        /* & #nameContactsWrapper {
+            display: flex;
+            gap: 20px;
+        } */
+        & .formNameWrapper {
+            position: relative;
+            margin-bottom: 50px;
+            & .inputHeader {
+                display: block;
+                margin-bottom: 10px;
+            }
+            & #name {
+                width: 670px;
+                padding: 20px 0 20px 0;
+                font-size: 24px;
+            }
+        }
+
+        & .formContactsWrapper {
+            position: relative;
+            & .inputHeader {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+
+
+            & #contactsInput {
+                width: 670px;
+                padding: 20px 0 20px 0;
+                font-size: 24px;
+            }
+        }
+
+        & .textareaBtnWrapper {
+            gap: 60px;
+            & .formTextareaWrapper {
+                & .inputHeader {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+
+                & #message {
+                    width: 670px;
+                    height: 50px;
+                    padding: 15px 0 10px 0;
+                    font-size: 24px;
+                }
+            }
+
+            & #submit-btn {
+                width: 105px;
+                height: 49px;
+                font-size: 24px;
+                cursor: pointer;
+                border: 2px solid black;
+
+                &:hover {
+                    color: white;
+                    background-color: var(--main-hover-color);
+                    border: none;
+                }
+            }
+        }
+    }
 }

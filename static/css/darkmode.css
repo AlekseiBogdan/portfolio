@@ -320,7 +320,7 @@
 
 @media screen and (min-width: 1366px) {
     .mentalPosters {
-        width: 670px;
+        width: 650px;
         height: 945px;
 
         & img {
@@ -334,7 +334,7 @@
     }
 
     .beatWeekendPosters {
-        width: 670px;
+        width: 650px;
         height: 945px;
 
         & img {
@@ -344,7 +344,7 @@
     }
     
     .signalPosters {
-        width: 670px;
+        width: 650px;
         height: 945px;
 
         & img {
@@ -359,7 +359,7 @@
     }
 
     .cartoonPosters {
-        width: 670px;
+        width: 650px;
         height: 945px;
 
         & img {
@@ -399,3 +399,44 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .mentalPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+
+    .cartoonPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+
+    .signalPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+
+    .beatWeekendPosters {
+        width: 670px;
+        height: 945px;
+
+        & img {
+            width: 670px;
+            height: 945px;
+        }
+    }
+}

@@ -38,6 +38,8 @@
         bottom: 0;
         width: 165px;
         height: 140px;
+
+        transform: scale(1)
     }
 
     #beWithCulture {
@@ -625,7 +627,7 @@
 
     .orangeBlock {
         margin: 0 40px 100px 40px;
-        width: 1362px;
+        width: 1280px;
         height: 632px;
     }
 
@@ -1194,5 +1196,9 @@
         & a {
             margin-right: 0;
         }
+    }
+
+    .orangeBlock {
+        width: 1362px;
     }
 }
